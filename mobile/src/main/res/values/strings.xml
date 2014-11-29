@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Syngenta</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
+    <string name="action_search">Search</string>
+    <string name="product1">Previous Product</string>
+    <string name="product2">Next Product</string>
+    <string name="button_submit">Submit</string>
+
+    <string name="Aatrex">Aatrex</string>
+    <string name="Atrazine">Atrazine</string>
+    <string name="Bicep">Bicep II Magnum</string>
+    <string name="BicepFC">Bicep II Magnum FC</string>
+    <string name="BicepL">Bicep Lite II Magnum</string>
+    <string name="Boundary">Boundary</string>
+    <string name="Dual">Dual II Magnum</string>
+    <string name="Flexstar">Flexstar GT 3.5</string>
+    <string name="Halex">Halex GT</string>
+    <string name="Lexar">Lexar EZ</string>
+    <string name="Lumax">Lumax EZ</string>
+    <string name="Prefix">Prefix</string>
+    <string name="Princep">Princep 4L</string>
+    <string name="Sequence">Sequence</string>
+    <string name="HiTech">Touchdown HiTech</string>
+    <string name="Touchdown">Touchdown Total</string>
+
+    <string-array name="product_list">
+        <item>Aatrex</item>
+        <item>Atrazine</item>
+        <item>Bicep II Magnum</item>
+        <item>Bicep II Magnum FC</item>
+        <item>Bicep Lite II Magnum</item>
+        <item>Boundary</item>
+        <item>Dual II Magnum</item>
+        <item>Flexstar GT 3.5</item>
+        <item>Halex GT</item>
+        <item>Lexar EZ</item>
+        <item>Lumax EZ</item>
+        <item>Prefix</item>
+        <item>Princep 4L</item>
+        <item>Sequence</item>
+        <item>Touchdown HiTech</item>
+        <item>Touchdown Total</item>
+    </string-array>
+
+    <string name="title_activity_check_products">CheckProducts</string>
+    <string name="topLoad">Top Load Matrix</string>
+    <string name="productWeight">Product Weight</string>
+    <string name="title_activity_product_weight_info">ProductWeightInfo</string>
+    <string name="title_activity_top_load_matrix">TopLoadMatrix</string>
+
+    <string-array name="flexstarCompatible">
+        <item>Flexstar GT 3.5</item>
+    </string-array>
+    <string-array name="halexCompatible">
+        <item>Halex GT</item>
+    </string-array>
+    <string-array name="prefixCompatible">
+        <item>Prefix</item>
+    </string-array>
+    <string-array name="princepCompatible">
+        <item>Princep 4L</item>
+    </string-array>
+    <string-array name="sequenceCompatible">
+        <item>Sequence</item>
+    </string-array>
+    <string-array name="tdhtCompatible">
+        <item>Touchdown HiTech</item>
+        <item>Touchdown Total</item>
+    </string-array>
+    <string-array name="tdtCompatible">
+        <item>Touchdown Total</item>
+    </string-array>
+
+    <string name="title_activity_aatrex">Aatrex</string>
+    <string name="trueTrue">This is true</string>
+    <string name="falseFalse">This is false</string>
+    <string name="aatrex">Aatrex 4L\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
+    <string name="atrazine">Atrazine 4L\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
+    <string name="bicepIIMagnum">Bicep II Magnum\nWeight: 9.31 lbs/gal\nMax: 5000 gallons</string>
+    <string name="bicepIIMagnumFC">Bicep II Magnum FC\nWeight: 9.31 lbs/gal\nMax: 5000 gallons</string>
+    <string name="bicepLiteIIMagnum">Bicep LITE II Magnum\nWeight: 9.31 lbs/gal\nMax: 5000 gallons</string>
+    <string name="boundary">Boundary\nWeight: 9.01 lbs/gal\nMax: 5000 gallons</string>
+    <string name="dualIIMagnum">Dual II Magnum\nWeight: 9.28 lbs/gal\nMax: 5000 gallons</string>
+    <string name="flexstar">Flexstar GT 3.5\nWeight: 10.08 lbs/gal\nMax: 4300 gallons</string>
+    <string name="halex">Halex GT\nWeight: 10.08 lbs/gal\nMax: 4420 gallons</string>
+    <string name="lexar">Lexar EZ\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
+    <string name="lumax">Lumax EZ\nWeight: 9.12 lbs/gal\nMax: 5000 gallons</string>
+    <string name="prefix">Prefix\nWeight: 9.32 lbs/gal\nMax: 5000</string>
+    <string name="princep">Princep 4L\nWeight: 9.47 lbs/gal\nMax: 4800 gallons</string>
+    <string name="sequence">Sequence\nWeight: 10.2 lbs/gal\nMax: 4400 gallons</string>
+    <string name="touchdownTotal">Touchdown Total\nWeight: 11.13 lbs/gal\nMax: 4000 gallons</string>
+    <string name="touchdownHitech">Touchdown HiTech\nWeight: 11.73 lbs/gal\nMax: 3800 gallons</string>
+    <string name="title_activity_atrazine">Atrazine</string>
+    <string name="title_activity_bicep_iimagnum">BicepIIMagnum</string>
+    <string name="title_activity_bicep_iimagnum_fc">BicepIIMagnumFC</string>
+    <string name="title_activity_bicep_lite_iimagnum">BicepLiteIIMagnum</string>
+    <string name="title_activity_boundary">Boundary</string>
+    <string name="title_activity_dual_iimagnum">DualIIMagnum</string>
+    <string name="title_activity_flexstar">Flexstar</string>
+    <string name="title_activity_halex">Halex</string>
+    <string name="title_activity_lexar">Lexar</string>
+    <string name="title_activity_lumax">Lumax</string>
+    <string name="title_activity_prefix">Prefix</string>
+    <string name="title_activity_princep">Princep</string>
+    <string name="title_activity_sequence">Sequence</string>
+    <string name="title_activity_touchdown_total">TouchdownTotal</string>
+    <string name="title_activity_touchdown_hitech">TouchdownHitech</string>
+    <string name="title_activity_top_load_true">TopLoadTrue</string>
+    <string name="title_activity_top_load_false">TopLoadFalse</string>
+
+</resources>
