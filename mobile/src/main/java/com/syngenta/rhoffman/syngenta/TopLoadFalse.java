@@ -1,9 +1,11 @@
 package com.syngenta.rhoffman.syngenta;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class TopLoadFalse extends Activity{
@@ -12,6 +14,14 @@ public class TopLoadFalse extends Activity{
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top_load_false);
+
+        Intent topLoadFalse = getIntent();
+        String previousProduct = topLoadFalse.getStringExtra("PREVIOUS_PRODUCT");
+        String nextProduct = topLoadFalse.getStringExtra("NEXT_PRODUCT");
+
+        TextView textView = new TextView(this);
+        textView.setText(nextProduct + " can't be top loaded on " + previousProduct + ".");
+        setContentView(textView);
     }
 
 

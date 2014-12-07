@@ -118,7 +118,7 @@ public class TopLoadMatrix extends Activity {
 
     public void startFalse(String previousProductExtra, String nextProductExtra){
 
-        Intent intent = new Intent(this, TopLoadTrue.class);
+        Intent intent = new Intent(this, TopLoadFalse.class);
 
         Bundle products = new Bundle();
         products.putString("PREVIOUS_PRODUCT", previousProductExtra);
