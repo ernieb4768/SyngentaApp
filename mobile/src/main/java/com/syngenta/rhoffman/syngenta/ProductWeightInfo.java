@@ -1,18 +1,13 @@
 package com.syngenta.rhoffman.syngenta;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class ProductWeightInfo extends Activity {
@@ -68,7 +63,24 @@ public class ProductWeightInfo extends Activity {
     // product information.
     public void displayProductInfo(int product){
 
-                switch (product){
+        Product aatrex = new Product("Aatrex 4L", 9.15, 5000);
+        Product atrazine = new Product("Atrazine 4L", 9.15, 5000);
+        Product bicep = new Product("Bicep II Magnum", 9.31, 5000);
+        Product bicepFC = new Product("Bicep II Magnum FC", 9.31, 5000);
+        Product bicepLite = new Product("Bicep LITE II Magnum", 9.31, 5000);
+        Product boundary = new Product("Boundary", 9.01, 5000);
+        Product dual = new Product("Dual II Magnum", 9.28, 5000);
+        Product flexstar = new Product("Flexstar GT 3.5", 10.08, 4300);
+        Product halex = new Product("Halex GT", 10.08, 4420);
+        Product lexar = new Product("Lexar EZ", 9.15, 5000);
+        Product lumax = new Product("Lumax EZ", 9.12, 5000);
+        Product prefix = new Product("Prefix", 9.32, 5000);
+        Product princep = new Product("Princep 4L", 9.47, 4800);
+        Product sequence = new Product("Sequence", 10.2, 4400);
+        Product touchdownHT = new Product("Touchdown HiTech", 11.73, 3800);
+        Product touchdown = new Product("Touchdown Total", 11.13, 4000);
+
+        switch (product){
             case 0:
 
                 break;

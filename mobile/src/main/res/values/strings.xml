@@ -8,7 +8,6 @@
     <string name="product1">Previous Product</string>
     <string name="product2">Next Product</string>
     <string name="button_submit">Submit</string>
-
     <string name="Aatrex">Aatrex</string>
     <string name="Atrazine">Atrazine</string>
     <string name="Bicep">Bicep II Magnum</string>
@@ -110,5 +109,7 @@
     <string name="title_activity_touchdown_hitech">TouchdownHitech</string>
     <string name="title_activity_top_load_true">TopLoadTrue</string>
     <string name="title_activity_top_load_false">TopLoadFalse</string>
+    <string name="title_activity_display_product">Product</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

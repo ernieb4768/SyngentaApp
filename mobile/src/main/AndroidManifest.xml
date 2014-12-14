@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,172 +17,180 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.CheckProducts"
+            android:name=".CheckProducts"
             android:label="@string/title_activity_check_products"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.TopLoadMatrix" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.ProductWeightInfo"
+            android:name=".ProductWeightInfo"
             android:label="@string/title_activity_product_weight_info"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.MainActivity" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.TopLoadMatrix"
+            android:name=".TopLoadMatrix"
             android:label="@string/title_activity_top_load_matrix"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.MainActivity" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.Aatrex"
+            android:name=".Aatrex"
             android:label="@string/title_activity_aatrex"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.Atrazine"
+            android:name=".Atrazine"
             android:label="@string/title_activity_atrazine"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.BicepIIMagnum"
+            android:name=".BicepIIMagnum"
             android:label="@string/title_activity_bicep_iimagnum"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.BicepIIMagnumFC"
+            android:name=".BicepIIMagnumFC"
             android:label="@string/title_activity_bicep_iimagnum_fc"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.BicepLiteIIMagnum"
+            android:name=".BicepLiteIIMagnum"
             android:label="@string/title_activity_bicep_lite_iimagnum"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.Boundary"
+            android:name=".Boundary"
             android:label="@string/title_activity_boundary"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.DualIIMagnum"
+            android:name=".DualIIMagnum"
             android:label="@string/title_activity_dual_iimagnum"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.Flexstar"
+            android:name=".Flexstar"
             android:label="@string/title_activity_flexstar"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.Halex"
+            android:name=".Halex"
             android:label="@string/title_activity_halex"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.Lexar"
+            android:name=".Lexar"
             android:label="@string/title_activity_lexar"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.Lumax"
+            android:name=".Lumax"
             android:label="@string/title_activity_lumax"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.Prefix"
+            android:name=".Prefix"
             android:label="@string/title_activity_prefix"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.Princep"
+            android:name=".Princep"
             android:label="@string/title_activity_princep"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.Sequence"
+            android:name=".Sequence"
             android:label="@string/title_activity_sequence"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.TouchdownTotal"
+            android:name=".TouchdownTotal"
             android:label="@string/title_activity_touchdown_total"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            android:parentActivityName=".ProductWeightInfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.TouchdownHitech"
+            android:name=".TouchdownHitech"
             android:label="@string/title_activity_touchdown_hitech"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.TouchdownTotal" >
+            android:parentActivityName=".TouchdownTotal" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.TouchdownTotal" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.TopLoadTrue"
+            android:name=".TopLoadTrue"
             android:label="@string/title_activity_top_load_true"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.TopLoadMatrix" >
+            android:parentActivityName=".TopLoadMatrix" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.TopLoadMatrix" />
         </activity>
         <activity
-            android:name="com.syngenta.rhoffman.syngenta.TopLoadFalse"
+            android:name=".TopLoadFalse"
             android:label="@string/title_activity_top_load_false"
-            android:parentActivityName="com.syngenta.rhoffman.syngenta.TopLoadMatrix" >
+            android:parentActivityName=".TopLoadMatrix" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.TopLoadMatrix" />
+        </activity>
+        <activity
+            android:name=".DisplayProduct"
+            android:label="@string/title_activity_display_product"
+            android:parentActivityName=".ProductWeightInfo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
     </application>
 
