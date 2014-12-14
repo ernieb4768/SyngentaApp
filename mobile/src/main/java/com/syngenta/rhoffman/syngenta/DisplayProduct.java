@@ -3,8 +3,10 @@ package com.syngenta.rhoffman.syngenta;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class DisplayProduct extends Activity {
@@ -18,6 +20,11 @@ public class DisplayProduct extends Activity {
         String name = display.getStringExtra("PRODUCT_NAME");
         double weight = display.getExtras().getDouble("PRODUCT_WEIGHT");
         int capacity = display.getExtras().getInt("PRODUCT_CAPACITY");
+
+        TextView textView = new TextView(this);
+        textView.setText(name + "/nWeight: " + weight + " lbs/gal/nCapacity: " + capacity + " gallons");
+        textView.setGravity(Gravity.CENTER);
+
     }
 
 
