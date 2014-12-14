@@ -1,6 +1,7 @@
 package com.syngenta.rhoffman.syngenta;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -82,58 +83,70 @@ public class ProductWeightInfo extends Activity {
 
         switch (product){
             case 0:
-
+                startDisplayProduct(aatrex.name, aatrex.weight, aatrex.capacity);
                 break;
             case 1:
-
+                startDisplayProduct(atrazine.name, atrazine.weight, atrazine.capacity);
                 break;
             case 2:
-
+                startDisplayProduct(bicep.name, bicep.weight, bicep.capacity);
                 break;
             case 3:
-
+                startDisplayProduct(bicepFC.name, bicepFC.weight, bicepFC.capacity);
                 break;
             case 4:
-
+                startDisplayProduct(bicepLite.name, bicepLite.weight, bicepLite.capacity);
                 break;
             case 5:
-
+                startDisplayProduct(boundary.name, boundary.weight, boundary.capacity);
                 break;
             case 6:
-
+                startDisplayProduct(dual.name, dual.weight, dual.capacity);
                 break;
             case 7:
-
+                startDisplayProduct(flexstar.name, flexstar.weight, flexstar.capacity);
                 break;
             case 8:
-
+                startDisplayProduct(halex.name, halex.weight, halex.capacity);
                 break;
             case 9:
-
+                startDisplayProduct(lexar.name, lexar.weight, lexar.capacity);
                 break;
             case 10:
-
+                startDisplayProduct(lumax.name, lumax.weight, lumax.capacity);
                 break;
             case 11:
-
+                startDisplayProduct(prefix.name, prefix.weight, prefix.capacity);
                 break;
             case 12:
-
+                startDisplayProduct(princep.name, princep.weight, princep.capacity);
                 break;
             case 13:
-
+                startDisplayProduct(sequence.name, sequence.weight, sequence.capacity);
                 break;
             case 14:
-
+                startDisplayProduct(touchdownHT.name, touchdownHT.weight, touchdownHT.capacity);
                 break;
             case 15:
-
+                startDisplayProduct(touchdown.name, touchdown.weight, touchdown.capacity);
                 break;
 
         }
 
     }
 
+    public void startDisplayProduct(String name, double weight, int capacity){
 
+        Intent intent = new Intent(this, DisplayProduct.class);
+
+        Bundle products = new Bundle();
+        products.putString("PRODUCT_NAME", name);
+        products.putDouble("PRODUCT_WEIGHT", weight);
+        products.putInt("PRODUCT_CAPACITY", capacity);
+        intent.putExtras(products);
+
+        startActivity(intent);
+
+    }
 
 }

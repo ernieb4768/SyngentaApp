@@ -1,6 +1,7 @@
 package com.syngenta.rhoffman.syngenta;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,6 +13,11 @@ public class DisplayProduct extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_product);
+
+        Intent display = getIntent();
+        String name = display.getStringExtra("PRODUCT_NAME");
+        double weight = display.getExtras().getDouble("PRODUCT_WEIGHT");
+        int capacity = display.getExtras().getInt("PRODUCT_CAPACITY");
     }
 
 
