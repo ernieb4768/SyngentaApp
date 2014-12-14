@@ -1,18 +1,14 @@
 package com.syngenta.rhoffman.syngenta;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class TopLoadMatrix extends Activity {
@@ -98,7 +94,7 @@ public class TopLoadMatrix extends Activity {
             startFalse(previousProductString, nextProductString);
         } else {
             Toploadable toploadable = new Toploadable();
-            toploadable.getProductName(previousProduct, nextProduct);
+            toploadable.checkProductsByName(previousProduct, previousProductString, nextProductString);
         }
 
     }

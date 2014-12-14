@@ -13,62 +13,6 @@ public class Toploadable{
             " Lite II Magnum", "Boundary", "Dual II Magnum", "Flexstar GT 3.5", "Halex GT", "Lexar EZ",
             "Lumax EZ", "Prefix", "Princep 4L", "Sequence", "Touchdown HiTech", "Touchdown Total"};
 
-    public void getProductName(int previousProductInt, int nextProductInt){
-
-        String previousProductString;
-        String nextProductString;
-
-        switch(nextProductInt){
-            case 0:
-                previousProductString = products[previousProductInt];
-                nextProductString = products[nextProductInt];
-                checkProductsByName(previousProductInt, previousProductString, nextProductString);
-                break;
-            case 1:
-                previousProductString = products[previousProductInt];
-                nextProductString = products[nextProductInt];
-                checkProductsByName(previousProductInt, previousProductString, nextProductString);
-                break;
-            case 2:
-                previousProductString = products[previousProductInt];
-                nextProductString = products[nextProductInt];
-                checkProductsByName(previousProductInt, previousProductString, nextProductString);
-                break;
-            case 3:
-                previousProductString = products[previousProductInt];
-                nextProductString = products[nextProductInt];
-                checkProductsByName(previousProductInt, previousProductString, nextProductString);
-                break;
-            case 4:
-                previousProductString = products[previousProductInt];
-                nextProductString = products[nextProductInt];
-                checkProductsByName(previousProductInt, previousProductString, nextProductString);
-                break;
-            case 6:
-                previousProductString = products[previousProductInt];
-                nextProductString = products[nextProductInt];
-                checkProductsByName(previousProductInt, previousProductString, nextProductString);
-                break;
-            case 9:
-                previousProductString = products[previousProductInt];
-                nextProductString = products[nextProductInt];
-                checkProductsByName(previousProductInt, previousProductString, nextProductString);
-                break;
-            case 10:
-                previousProductString = products[previousProductInt];
-                nextProductString = products[nextProductInt];
-                checkProductsByName(previousProductInt, previousProductString, nextProductString);
-                break;
-            case 14:
-                previousProductString = products[previousProductInt];
-                nextProductString = products[nextProductInt];
-                checkProductsByName(previousProductInt, previousProductString, nextProductString);
-                break;
-            default:
-                break;
-        }
-
-    }
 
     public void checkProductsByName(int a, String previous, String next){
 
@@ -145,9 +89,11 @@ public class Toploadable{
                     }
                 }
                 break;
-            }
-        TopLoadMatrix falseMatrix = new TopLoadMatrix();
-        falseMatrix.startFalse(previous, next);
+            default:
+                TopLoadMatrix falseMatrix = new TopLoadMatrix();
+                falseMatrix.startFalse(previous, next);
+        }
+
     }
 
 }
