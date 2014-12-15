@@ -213,6 +213,14 @@ ADDED from AndroidManifest.xml:179:9
 		ADDED from AndroidManifest.xml:182:13
 	android:name
 		ADDED from AndroidManifest.xml:180:13
+activity#com.syngenta.rhoffman.syngenta.DisplayProduct
+ADDED from AndroidManifest.xml:187:9
+	android:label
+		ADDED from AndroidManifest.xml:189:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:190:13
+	android:name
+		ADDED from AndroidManifest.xml:188:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 	android:targetSdkVersion

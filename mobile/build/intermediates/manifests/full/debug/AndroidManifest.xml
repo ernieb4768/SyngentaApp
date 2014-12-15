@@ -190,6 +190,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.TopLoadMatrix" />
         </activity>
+        <activity
+            android:name="com.syngenta.rhoffman.syngenta.DisplayProduct"
+            android:label="@string/title_activity_display_product"
+            android:parentActivityName="com.syngenta.rhoffman.syngenta.ProductWeightInfo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
+        </activity>
     </application>
 
 </manifest>

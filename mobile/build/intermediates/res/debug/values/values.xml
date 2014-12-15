@@ -82,6 +82,7 @@
     <string name="falseFalse">This is false</string>
     <string name="flexstar">Flexstar GT 3.5\nWeight: 10.08 lbs/gal\nMax: 4300 gallons</string>
     <string name="halex">Halex GT\nWeight: 10.08 lbs/gal\nMax: 4420 gallons</string>
+    <string name="hello_world">Hello world!</string>
     <string name="lexar">Lexar EZ\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
     <string name="lumax">Lumax EZ\nWeight: 9.12 lbs/gal\nMax: 5000 gallons</string>
     <string name="prefix">Prefix\nWeight: 9.32 lbs/gal\nMax: 5000</string>
@@ -97,6 +98,7 @@
     <string name="title_activity_bicep_lite_iimagnum">BicepLiteIIMagnum</string>
     <string name="title_activity_boundary">Boundary</string>
     <string name="title_activity_check_products">CheckProducts</string>
+    <string name="title_activity_display_product">Product</string>
     <string name="title_activity_dual_iimagnum">DualIIMagnum</string>
     <string name="title_activity_flexstar">Flexstar</string>
     <string name="title_activity_halex">Halex</string>

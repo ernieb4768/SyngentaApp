@@ -22,8 +22,11 @@ public class DisplayProduct extends Activity {
         int capacity = display.getExtras().getInt("PRODUCT_CAPACITY");
 
         TextView textView = new TextView(this);
-        textView.setText(name + "/nWeight: " + weight + " lbs/gal/nCapacity: " + capacity + " gallons");
         textView.setGravity(Gravity.CENTER);
+        textView.setTextSize(30);
+        textView.setText(name + "\nWeight: " + weight + " lbs/gal\nCapacity: " + capacity + " gallons");
+
+        setContentView(textView);
 
     }
 

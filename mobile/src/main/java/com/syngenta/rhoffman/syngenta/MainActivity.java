@@ -51,4 +51,13 @@ public class MainActivity extends Activity {
         startActivity(intent1);
     }
 
+    public void startExit(){
+
+        Intent killIntent = new Intent(Intent.ACTION_MAIN);
+        killIntent.addCategory(Intent.CATEGORY_HOME);
+        killIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(killIntent);
+
+    }
+
 }
