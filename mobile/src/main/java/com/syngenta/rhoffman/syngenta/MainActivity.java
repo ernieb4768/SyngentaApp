@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 
 
 public class MainActivity extends Activity {
@@ -49,15 +47,6 @@ public class MainActivity extends Activity {
         Intent intent1 = new Intent(this, ProductWeightInfo.class);
 
         startActivity(intent1);
-    }
-
-    public void startExit(){
-
-        Intent killIntent = new Intent(Intent.ACTION_MAIN);
-        killIntent.addCategory(Intent.CATEGORY_HOME);
-        killIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(killIntent);
-
     }
 
 }

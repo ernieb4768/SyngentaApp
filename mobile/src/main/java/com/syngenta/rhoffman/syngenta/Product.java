@@ -7,8 +7,6 @@ package com.syngenta.rhoffman.syngenta;
  * Name is a String that tells what the product is called.
  * Weight is a double that tells how much the product weighs in pounds per gallon.
  * Capacity is an int that tells how many gallons will fit in a trailer.
- *
- * This object will also have three methods, one per property to simply display that property.
  */
 public class Product {
 
@@ -16,11 +14,11 @@ public class Product {
     public double weight;
     public int capacity;
 
-    public Product(String name, double weight, int capacity) {
+    public Product(String productName, double productWeight, int trailerCapacity) {
 
-        name = this.name;
-        weight = this.weight;
-        capacity = this.capacity;
+        name = productName;
+        weight = productWeight;
+        capacity = trailerCapacity;
 
     }
 

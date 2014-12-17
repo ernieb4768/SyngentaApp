@@ -9,14 +9,7 @@ package com.syngenta.rhoffman.syngenta;
 
 public final class R {
     public static final class array {
-        public static final int flexstarCompatible=0x7f040000;
-        public static final int halexCompatible=0x7f040001;
-        public static final int prefixCompatible=0x7f040002;
-        public static final int princepCompatible=0x7f040003;
-        public static final int product_list=0x7f040004;
-        public static final int sequenceCompatible=0x7f040005;
-        public static final int tdhtCompatible=0x7f040006;
-        public static final int tdtCompatible=0x7f040007;
+        public static final int product_list=0x7f040000;
     }
     public static final class attr {
     }
@@ -91,44 +84,26 @@ public final class R {
         public static final int boundary=0x7f060019;
         public static final int button_submit=0x7f06001a;
         public static final int dualIIMagnum=0x7f06001b;
-        public static final int falseFalse=0x7f06001c;
+        public static final int exit=0x7f06001c;
         public static final int flexstar=0x7f06001d;
         public static final int halex=0x7f06001e;
-        public static final int hello_world=0x7f06001f;
-        public static final int lexar=0x7f060020;
-        public static final int lumax=0x7f060021;
-        public static final int prefix=0x7f060022;
-        public static final int princep=0x7f060023;
-        public static final int product1=0x7f060024;
-        public static final int product2=0x7f060025;
-        public static final int productWeight=0x7f060026;
-        public static final int sequence=0x7f060027;
-        public static final int title_activity_aatrex=0x7f060028;
-        public static final int title_activity_atrazine=0x7f060029;
-        public static final int title_activity_bicep_iimagnum=0x7f06002a;
-        public static final int title_activity_bicep_iimagnum_fc=0x7f06002b;
-        public static final int title_activity_bicep_lite_iimagnum=0x7f06002c;
-        public static final int title_activity_boundary=0x7f06002d;
-        public static final int title_activity_check_products=0x7f06002e;
-        public static final int title_activity_display_product=0x7f06002f;
-        public static final int title_activity_dual_iimagnum=0x7f060030;
-        public static final int title_activity_flexstar=0x7f060031;
-        public static final int title_activity_halex=0x7f060032;
-        public static final int title_activity_lexar=0x7f060033;
-        public static final int title_activity_lumax=0x7f060034;
-        public static final int title_activity_prefix=0x7f060035;
-        public static final int title_activity_princep=0x7f060036;
-        public static final int title_activity_product_weight_info=0x7f060037;
-        public static final int title_activity_sequence=0x7f060038;
-        public static final int title_activity_top_load_false=0x7f060039;
-        public static final int title_activity_top_load_matrix=0x7f06003a;
-        public static final int title_activity_top_load_true=0x7f06003b;
-        public static final int title_activity_touchdown_hitech=0x7f06003c;
-        public static final int title_activity_touchdown_total=0x7f06003d;
-        public static final int topLoad=0x7f06003e;
-        public static final int touchdownHitech=0x7f06003f;
-        public static final int touchdownTotal=0x7f060040;
-        public static final int trueTrue=0x7f060041;
+        public static final int lexar=0x7f06001f;
+        public static final int lumax=0x7f060020;
+        public static final int prefix=0x7f060021;
+        public static final int princep=0x7f060022;
+        public static final int product1=0x7f060023;
+        public static final int product2=0x7f060024;
+        public static final int productWeight=0x7f060025;
+        public static final int sequence=0x7f060026;
+        public static final int title_activity_check_products=0x7f060027;
+        public static final int title_activity_display_product=0x7f060028;
+        public static final int title_activity_product_weight_info=0x7f060029;
+        public static final int title_activity_top_load_false=0x7f06002a;
+        public static final int title_activity_top_load_matrix=0x7f06002b;
+        public static final int title_activity_top_load_true=0x7f06002c;
+        public static final int topLoad=0x7f06002d;
+        public static final int touchdownHitech=0x7f06002e;
+        public static final int touchdownTotal=0x7f06002f;
     }
     public static final class style {
         /**  Customize your theme here. 
