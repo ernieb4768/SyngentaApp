@@ -49,8 +49,6 @@
     <string name="productWeight">Product Weight</string>
     <string name="title_activity_product_weight_info">Product Weight Info</string>
     <string name="title_activity_top_load_matrix">Top Load Matrix</string>
-
-
     <string name="aatrex">Aatrex 4L\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
     <string name="atrazine">Atrazine 4L\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
     <string name="bicepIIMagnum">Bicep II Magnum\nWeight: 9.31 lbs/gal\nMax: 5000 gallons</string>
@@ -67,10 +65,11 @@
     <string name="sequence">Sequence\nWeight: 10.2 lbs/gal\nMax: 4400 gallons</string>
     <string name="touchdownTotal">Touchdown Total\nWeight: 11.13 lbs/gal\nMax: 4000 gallons</string>
     <string name="touchdownHitech">Touchdown HiTech\nWeight: 11.73 lbs/gal\nMax: 3800 gallons</string>
-
     <string name="title_activity_top_load_true">TopLoadTrue</string>
     <string name="title_activity_top_load_false">TopLoadFalse</string>
     <string name="title_activity_display_product">Product</string>
     <string name="exit">Exit</string>
+    <string name="title_activity_help">Help</string>
+    <string name="screwed">I\'m sorry, but I\'m actually no help at all. Good luck though, seriously.</string>
 
 </resources>

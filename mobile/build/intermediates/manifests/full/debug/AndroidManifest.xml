@@ -62,6 +62,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.ProductWeightInfo" />
         </activity>
+        <activity
+            android:name="com.syngenta.rhoffman.syngenta.Help"
+            android:label="@string/title_activity_help"
+            android:parentActivityName="com.syngenta.rhoffman.syngenta.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.syngenta.rhoffman.syngenta.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

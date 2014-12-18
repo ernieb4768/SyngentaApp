@@ -3,6 +3,7 @@ package com.syngenta.rhoffman.syngenta;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -21,6 +22,8 @@ public class TopLoadTrue extends Activity{
 
         TextView textView = new TextView(this);
         textView.setText(nextProduct + " can be top loaded on " + previousProduct + ".");
+        textView.setGravity(Gravity.CENTER);
+        textView.setTextSize(16);
 
         setContentView(textView);
     }

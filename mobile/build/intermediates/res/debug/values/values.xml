@@ -67,9 +67,11 @@
     <string name="product1">Previous Product</string>
     <string name="product2">Next Product</string>
     <string name="productWeight">Product Weight</string>
+    <string name="screwed">I\'m sorry, but I\'m actually no help at all. Good luck though, seriously.</string>
     <string name="sequence">Sequence\nWeight: 10.2 lbs/gal\nMax: 4400 gallons</string>
     <string name="title_activity_check_products">Check Products</string>
     <string name="title_activity_display_product">Product</string>
+    <string name="title_activity_help">Help</string>
     <string name="title_activity_product_weight_info">Product Weight Info</string>
     <string name="title_activity_top_load_false">TopLoadFalse</string>
     <string name="title_activity_top_load_matrix">Top Load Matrix</string>

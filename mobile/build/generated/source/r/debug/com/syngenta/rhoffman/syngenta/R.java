@@ -40,20 +40,22 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_display_product=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_product_weight_info=0x7f030002;
-        public static final int activity_top_load_false=0x7f030003;
-        public static final int activity_top_load_matrix=0x7f030004;
-        public static final int activity_top_load_true=0x7f030005;
+        public static final int activity_help=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_product_weight_info=0x7f030003;
+        public static final int activity_top_load_false=0x7f030004;
+        public static final int activity_top_load_matrix=0x7f030005;
+        public static final int activity_top_load_true=0x7f030006;
     }
     public static final class menu {
         public static final int check_products=0x7f080000;
         public static final int main=0x7f080001;
         public static final int menu_display_product=0x7f080002;
-        public static final int menu_top_load_false=0x7f080003;
-        public static final int menu_top_load_true=0x7f080004;
-        public static final int product_weight_info=0x7f080005;
-        public static final int top_load_matrix=0x7f080006;
+        public static final int menu_help=0x7f080003;
+        public static final int menu_top_load_false=0x7f080004;
+        public static final int menu_top_load_true=0x7f080005;
+        public static final int product_weight_info=0x7f080006;
+        public static final int top_load_matrix=0x7f080007;
     }
     public static final class string {
         public static final int Aatrex=0x7f060000;
@@ -94,16 +96,18 @@ public final class R {
         public static final int product1=0x7f060023;
         public static final int product2=0x7f060024;
         public static final int productWeight=0x7f060025;
-        public static final int sequence=0x7f060026;
-        public static final int title_activity_check_products=0x7f060027;
-        public static final int title_activity_display_product=0x7f060028;
-        public static final int title_activity_product_weight_info=0x7f060029;
-        public static final int title_activity_top_load_false=0x7f06002a;
-        public static final int title_activity_top_load_matrix=0x7f06002b;
-        public static final int title_activity_top_load_true=0x7f06002c;
-        public static final int topLoad=0x7f06002d;
-        public static final int touchdownHitech=0x7f06002e;
-        public static final int touchdownTotal=0x7f06002f;
+        public static final int screwed=0x7f060026;
+        public static final int sequence=0x7f060027;
+        public static final int title_activity_check_products=0x7f060028;
+        public static final int title_activity_display_product=0x7f060029;
+        public static final int title_activity_help=0x7f06002a;
+        public static final int title_activity_product_weight_info=0x7f06002b;
+        public static final int title_activity_top_load_false=0x7f06002c;
+        public static final int title_activity_top_load_matrix=0x7f06002d;
+        public static final int title_activity_top_load_true=0x7f06002e;
+        public static final int topLoad=0x7f06002f;
+        public static final int touchdownHitech=0x7f060030;
+        public static final int touchdownTotal=0x7f060031;
     }
     public static final class style {
         /**  Customize your theme here. 

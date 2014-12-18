@@ -80,7 +80,7 @@ public class TopLoadMatrix extends Activity {
     }
 
     // This function checks if a and b are equal. If they are there is no need to go any
-    // further and it will start activity_top_load_true. If they a and b are not equal,
+    // further and it will start activity_top_load_true. If they are not equal,
     // there will need to be further decisions that will be passed on.
     public void decision(int previousProduct, int nextProduct, String previousProductString,
                          String nextProductString){
@@ -94,7 +94,7 @@ public class TopLoadMatrix extends Activity {
             startFalse(previousProductString, nextProductString);
         } else {
             Toploadable toploadable = new Toploadable();
-            toploadable.checkProductsByName(previousProduct, previousProductString, nextProductString);
+            toploadable.checkProductsByName(nextProduct, previousProductString, nextProductString);
         }
 
     }
