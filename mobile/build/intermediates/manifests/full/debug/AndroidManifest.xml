@@ -70,6 +70,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syngenta.rhoffman.syngenta.MainActivity" />
         </activity>
+        <activity
+            android:name="com.syngenta.rhoffman.syngenta.Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.syngenta.rhoffman.syngenta.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.syngenta.rhoffman.syngenta.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -15,6 +15,7 @@ ADDED from AndroidManifest.xml:2:1
 		INJECTED from AndroidManifest.xml:0:0
 application
 ADDED from AndroidManifest.xml:5:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
 	android:label
 		ADDED from AndroidManifest.xml:8:9
 	android:allowBackup
@@ -93,8 +94,17 @@ ADDED from AndroidManifest.xml:59:9
 		ADDED from AndroidManifest.xml:62:13
 	android:name
 		ADDED from AndroidManifest.xml:60:13
+activity#com.syngenta.rhoffman.syngenta.Settings
+ADDED from AndroidManifest.xml:67:9
+	android:label
+		ADDED from AndroidManifest.xml:69:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:70:13
+	android:name
+		ADDED from AndroidManifest.xml:68:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+MERGED from com.android.support:support-v4:21.0.3:15:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
