@@ -93,8 +93,8 @@ public class TopLoadMatrix extends Activity {
                 nextProduct == 11 || nextProduct == 12 || nextProduct == 13 || nextProduct == 15){
             startFalse(previousProductString, nextProductString);
         } else {
-            Toploadable toploadable = new Toploadable();
-            toploadable.checkProductsByName(nextProduct, previousProductString, nextProductString);
+            Toploadable toploadable = new Toploadable(previousProductString, nextProductString);
+            toploadable.checkProductsByName();
         }
 
     }

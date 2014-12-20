@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pre-dex-items>
+<items version="2" >
 
     <item
-        dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/classes-1cfa497df4d0ec0050d94795936a5ec39fd4e61e.jar"
-        jar="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/5.0.77/classes.jar"
+        jar="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="80a6f6f2d0dfcfae8c424cf81dcdf7157e7bf4b8"/>
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/classes-73af8e4df3d733521b2bf767468ed9071cfd9ee6.jar" />
+    </item>
     <item
-        dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/support-v4-19.1.0-184b090a2900a3c3eb5051314241892a04255c52.jar"
-        jar="/home/rhoffman/android-studio/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jar="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-ff2f7193a64ed2746bae5f41c0a1b08660114bf5.jar" />
+    </item>
+    <item
+        jar="/home/rhoffman/android-sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-a8bc53cb6f5cdba3c310f3ae7e98a7766172f2e1.jar" />
+    </item>
 
-</pre-dex-items>
+</items>

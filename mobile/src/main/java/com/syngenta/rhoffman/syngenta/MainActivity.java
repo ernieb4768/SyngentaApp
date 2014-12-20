@@ -57,8 +57,11 @@ public class MainActivity extends Activity {
 
     // Another place holder for the settings. I may add a generic settings activity and see if I can
     // customize it a little so it won't look too bad.
-    public boolean openSettings(){
-        return true;
+    public void openSettings(){
+
+        Intent startSearch = new Intent(this, Settings.class);
+        startActivity(startSearch);
+
     }
 
     // The only one that will work for now. It starts an Intent to open the Help activity.
