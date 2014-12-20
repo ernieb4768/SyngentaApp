@@ -8,7 +8,6 @@
     <string name="product1">Previous Product</string>
     <string name="product2">Next Product</string>
     <string name="button_submit">Submit</string>
-
     <string name="Aatrex">Aatrex</string>
     <string name="Atrazine">Atrazine</string>
     <string name="Bicep">Bicep II Magnum</string>
@@ -45,38 +44,11 @@
         <item>Touchdown Total</item>
     </string-array>
 
-    <string name="title_activity_check_products">CheckProducts</string>
+    <string name="title_activity_check_products">Check Products</string>
     <string name="topLoad">Top Load Matrix</string>
     <string name="productWeight">Product Weight</string>
-    <string name="title_activity_product_weight_info">ProductWeightInfo</string>
-    <string name="title_activity_top_load_matrix">TopLoadMatrix</string>
-
-    <string-array name="flexstarCompatible">
-        <item>Flexstar GT 3.5</item>
-    </string-array>
-    <string-array name="halexCompatible">
-        <item>Halex GT</item>
-    </string-array>
-    <string-array name="prefixCompatible">
-        <item>Prefix</item>
-    </string-array>
-    <string-array name="princepCompatible">
-        <item>Princep 4L</item>
-    </string-array>
-    <string-array name="sequenceCompatible">
-        <item>Sequence</item>
-    </string-array>
-    <string-array name="tdhtCompatible">
-        <item>Touchdown HiTech</item>
-        <item>Touchdown Total</item>
-    </string-array>
-    <string-array name="tdtCompatible">
-        <item>Touchdown Total</item>
-    </string-array>
-
-    <string name="title_activity_aatrex">Aatrex</string>
-    <string name="trueTrue">This is true</string>
-    <string name="falseFalse">This is false</string>
+    <string name="title_activity_product_weight_info">Product Weight Info</string>
+    <string name="title_activity_top_load_matrix">Top Load Matrix</string>
     <string name="aatrex">Aatrex 4L\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
     <string name="atrazine">Atrazine 4L\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
     <string name="bicepIIMagnum">Bicep II Magnum\nWeight: 9.31 lbs/gal\nMax: 5000 gallons</string>
@@ -93,22 +65,11 @@
     <string name="sequence">Sequence\nWeight: 10.2 lbs/gal\nMax: 4400 gallons</string>
     <string name="touchdownTotal">Touchdown Total\nWeight: 11.13 lbs/gal\nMax: 4000 gallons</string>
     <string name="touchdownHitech">Touchdown HiTech\nWeight: 11.73 lbs/gal\nMax: 3800 gallons</string>
-    <string name="title_activity_atrazine">Atrazine</string>
-    <string name="title_activity_bicep_iimagnum">BicepIIMagnum</string>
-    <string name="title_activity_bicep_iimagnum_fc">BicepIIMagnumFC</string>
-    <string name="title_activity_bicep_lite_iimagnum">BicepLiteIIMagnum</string>
-    <string name="title_activity_boundary">Boundary</string>
-    <string name="title_activity_dual_iimagnum">DualIIMagnum</string>
-    <string name="title_activity_flexstar">Flexstar</string>
-    <string name="title_activity_halex">Halex</string>
-    <string name="title_activity_lexar">Lexar</string>
-    <string name="title_activity_lumax">Lumax</string>
-    <string name="title_activity_prefix">Prefix</string>
-    <string name="title_activity_princep">Princep</string>
-    <string name="title_activity_sequence">Sequence</string>
-    <string name="title_activity_touchdown_total">TouchdownTotal</string>
-    <string name="title_activity_touchdown_hitech">TouchdownHitech</string>
     <string name="title_activity_top_load_true">TopLoadTrue</string>
     <string name="title_activity_top_load_false">TopLoadFalse</string>
+    <string name="title_activity_display_product">Product</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_help">Help</string>
+    <string name="screwed">I\'m sorry, but I\'m actually no help at all. Good luck though, seriously.</string>
 
 </resources>

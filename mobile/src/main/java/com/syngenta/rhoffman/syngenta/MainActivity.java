@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 
 
 public class MainActivity extends Activity {
@@ -33,7 +31,45 @@ public class MainActivity extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        return id == R.id.action_settings || super.onOptionsItemSelected(item);
+
+        switch (id){
+
+            case R.id.action_search:
+                openSearch();
+                return true;
+            case R.id.action_settings:
+                openSettings();
+                return true;
+            case R.id.action_help:
+                openHelp();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+
+        }
+
+    }
+
+    // A place holder until I get search functionality enabled... If I ever learn how to do that.
+    public boolean openSearch(){
+        return true;
+    }
+
+    // Another place holder for the settings. I may add a generic settings activity and see if I can
+    // customize it a little so it won't look too bad.
+    public void openSettings(){
+
+        Intent startSearch = new Intent(this, Settings.class);
+        startActivity(startSearch);
+
+    }
+
+    // The only one that will work for now. It starts an Intent to open the Help activity.
+    public void openHelp(){
+
+        Intent helpIntent = new Intent(this, Help.class);
+        startActivity(helpIntent);
+
     }
 
     public void startTopLoadMatrix(View view){

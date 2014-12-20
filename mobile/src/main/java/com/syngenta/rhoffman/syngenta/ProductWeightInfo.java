@@ -1,18 +1,14 @@
 package com.syngenta.rhoffman.syngenta;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class ProductWeightInfo extends Activity {
@@ -68,186 +64,88 @@ public class ProductWeightInfo extends Activity {
     // product information.
     public void displayProductInfo(int product){
 
-        View aatrexView = new View(this);
-        View atrazineView = new View(this);
-        View bicepIIMagView = new View(this);
-        View bicepIIMagFCView = new View(this);
-        View bicepLiteView = new View(this);
-        View boundaryView = new View(this);
-        View dualIIMagView = new View(this);
-        View flexstarView = new View(this);
-        View halexView = new View(this);
-        View lexarView = new View(this);
-        View lumaxView = new View(this);
-        View prefixView = new View(this);
-        View princepView = new View(this);
-        View sequenceView = new View(this);
-        View tdtView = new View(this);
-        View tdhtView = new View(this);
+        Product aatrex = new Product("Aatrex 4L", 9.15, 5000);
+        Product atrazine = new Product("Atrazine 4L", 9.15, 5000);
+        Product bicep = new Product("Bicep II Magnum", 9.31, 5000);
+        Product bicepFC = new Product("Bicep II Magnum FC", 9.31, 5000);
+        Product bicepLite = new Product("Bicep LITE II Magnum", 9.31, 5000);
+        Product boundary = new Product("Boundary", 9.01, 5000);
+        Product dual = new Product("Dual II Magnum", 9.28, 5000);
+        Product flexstar = new Product("Flexstar GT 3.5", 10.08, 4300);
+        Product halex = new Product("Halex GT", 10.08, 4420);
+        Product lexar = new Product("Lexar EZ", 9.15, 5000);
+        Product lumax = new Product("Lumax EZ", 9.12, 5000);
+        Product prefix = new Product("Prefix", 9.32, 5000);
+        Product princep = new Product("Princep 4L", 9.47, 4800);
+        Product sequence = new Product("Sequence", 10.2, 4400);
+        Product touchdownHT = new Product("Touchdown HiTech", 11.73, 3800);
+        Product touchdown = new Product("Touchdown Total", 11.13, 4000);
 
         switch (product){
             case 0:
-                displayAatrex(aatrexView);
+                startDisplayProduct(aatrex.name, aatrex.weight, aatrex.capacity);
                 break;
             case 1:
-                displayAtrazine(atrazineView);
+                startDisplayProduct(atrazine.name, atrazine.weight, atrazine.capacity);
                 break;
             case 2:
-                displayBicepIIMagnum(bicepIIMagView);
+                startDisplayProduct(bicep.name, bicep.weight, bicep.capacity);
                 break;
             case 3:
-                displayBicepIIMagnumFC(bicepIIMagFCView);
+                startDisplayProduct(bicepFC.name, bicepFC.weight, bicepFC.capacity);
                 break;
             case 4:
-                displayBicepLiteIIMagnum(bicepLiteView);
+                startDisplayProduct(bicepLite.name, bicepLite.weight, bicepLite.capacity);
                 break;
             case 5:
-                displayBoundary(boundaryView);
+                startDisplayProduct(boundary.name, boundary.weight, boundary.capacity);
                 break;
             case 6:
-                displayDualIIMagnum(dualIIMagView);
+                startDisplayProduct(dual.name, dual.weight, dual.capacity);
                 break;
             case 7:
-                displayFlexstar(flexstarView);
+                startDisplayProduct(flexstar.name, flexstar.weight, flexstar.capacity);
                 break;
             case 8:
-                displayHalex(halexView);
+                startDisplayProduct(halex.name, halex.weight, halex.capacity);
                 break;
             case 9:
-                displayLexar(lexarView);
+                startDisplayProduct(lexar.name, lexar.weight, lexar.capacity);
                 break;
             case 10:
-                displayLumax(lumaxView);
+                startDisplayProduct(lumax.name, lumax.weight, lumax.capacity);
                 break;
             case 11:
-                displayPrefix(prefixView);
+                startDisplayProduct(prefix.name, prefix.weight, prefix.capacity);
                 break;
             case 12:
-                displayPrincep(princepView);
+                startDisplayProduct(princep.name, princep.weight, princep.capacity);
                 break;
             case 13:
-                displaySequence(sequenceView);
+                startDisplayProduct(sequence.name, sequence.weight, sequence.capacity);
                 break;
             case 14:
-                displayTouchdownHiTech(tdhtView);
+                startDisplayProduct(touchdownHT.name, touchdownHT.weight, touchdownHT.capacity);
                 break;
             case 15:
-                displayTouchdownTotal(tdtView);
+                startDisplayProduct(touchdown.name, touchdown.weight, touchdown.capacity);
                 break;
 
         }
 
     }
 
-    public void displayAatrex(View view){
+    public void startDisplayProduct(String name, double weight, int capacity){
 
-        Intent aatrex = new Intent(this, Aatrex.class);
-        startActivity(aatrex);
+        Intent intent = new Intent(this, DisplayProduct.class);
 
-    }
+        Bundle products = new Bundle();
+        products.putString("PRODUCT_NAME", name);
+        products.putDouble("PRODUCT_WEIGHT", weight);
+        products.putInt("PRODUCT_CAPACITY", capacity);
+        intent.putExtras(products);
 
-    public void displayAtrazine(View view){
-
-        Intent atrazine = new Intent(this, Atrazine.class);
-        startActivity(atrazine);
-
-    }
-
-    public void displayBicepIIMagnum(View view){
-
-        Intent bicep = new Intent(this, BicepIIMagnum.class);
-        startActivity(bicep);
-
-    }
-
-    public void displayBicepIIMagnumFC(View view){
-
-        Intent bicepFC = new Intent(this, BicepIIMagnumFC.class);
-        startActivity(bicepFC);
-
-    }
-
-    public void displayBicepLiteIIMagnum(View view){
-
-        Intent bicepLite = new Intent(this, BicepLiteIIMagnum.class);
-        startActivity(bicepLite);
-
-    }
-
-    public void displayBoundary(View view){
-
-        Intent boundary = new Intent(this, Boundary.class);
-        startActivity(boundary);
-
-    }
-
-    public void displayDualIIMagnum(View view){
-
-        Intent dual = new Intent(this, DualIIMagnum.class);
-        startActivity(dual);
-
-    }
-
-    public void displayFlexstar(View view){
-
-        Intent flexstar = new Intent(this, Flexstar.class);
-        startActivity(flexstar);
-
-    }
-
-    public void displayHalex(View view){
-
-        Intent halex = new Intent(this, Halex.class);
-        startActivity(halex);
-
-    }
-
-    public void displayLexar(View view){
-
-        Intent lexar = new Intent(this, Lexar.class);
-        startActivity(lexar);
-
-    }
-
-    public void displayLumax(View view){
-
-        Intent lumax = new Intent(this, Lumax.class);
-        startActivity(lumax);
-
-    }
-
-    public void displayPrefix(View view){
-
-        Intent prefix = new Intent(this, Prefix.class);
-        startActivity(prefix);
-
-    }
-
-    public void displayPrincep(View view){
-
-        Intent princep = new Intent(this, Princep.class);
-        startActivity(princep);
-
-    }
-
-    public void displaySequence(View view){
-
-        Intent sequence = new Intent(this, Sequence.class);
-        startActivity(sequence);
-
-    }
-
-    public void displayTouchdownTotal(View view){
-
-        Intent tdt = new Intent(this, TouchdownTotal.class);
-        startActivity(tdt);
-
-    }
-
-    public void displayTouchdownHiTech(View view){
-
-        Intent tdht = new Intent(this, TouchdownHitech.class);
-        startActivity(tdht);
+        startActivity(intent);
 
     }
 

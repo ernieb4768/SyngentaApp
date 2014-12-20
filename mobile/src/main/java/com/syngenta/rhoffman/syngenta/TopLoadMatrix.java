@@ -1,18 +1,14 @@
 package com.syngenta.rhoffman.syngenta;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class TopLoadMatrix extends Activity {
@@ -84,7 +80,7 @@ public class TopLoadMatrix extends Activity {
     }
 
     // This function checks if a and b are equal. If they are there is no need to go any
-    // further and it will start activity_top_load_true. If they a and b are not equal,
+    // further and it will start activity_top_load_true. If they are not equal,
     // there will need to be further decisions that will be passed on.
     public void decision(int previousProduct, int nextProduct, String previousProductString,
                          String nextProductString){
@@ -97,8 +93,8 @@ public class TopLoadMatrix extends Activity {
                 nextProduct == 11 || nextProduct == 12 || nextProduct == 13 || nextProduct == 15){
             startFalse(previousProductString, nextProductString);
         } else {
-            Toploadable toploadable = new Toploadable();
-            toploadable.getProductName(previousProduct, nextProduct);
+            Toploadable toploadable = new Toploadable(previousProductString, nextProductString);
+            toploadable.checkProductsByName();
         }
 
     }
