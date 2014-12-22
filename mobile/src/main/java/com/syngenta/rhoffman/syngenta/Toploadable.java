@@ -16,15 +16,25 @@ public class Toploadable{
      * trailer being washed.
      */
 
-    public String[] aatrexCompatible = {"Atrazine", "Bicep II Magnum", "Bicep II Magnum FC",
-                    "Bicep Lite II Magnum"};
-    public String[] atrazineCompatible = {"Aatrex"};
-    public String[] bicepCompatible = {"Bicep II Magnum", "Bicep II Magnum FC", "Bicep Lite II Magnum"};
-    public String[] lexarlumaxCompatible = {"Lexar EZ", "Lumax EZ"};
-    public String[] tdhtCompatible = {"Touchdown Total"};
-    public String[] products = {"Aatrex", "Atrazine", "Bicep II Magnum", "Bicep II Magnum FC", "Bicep" +
-            " Lite II Magnum", "Boundary", "Dual II Magnum", "Flexstar GT 3.5", "Halex GT", "Lexar EZ",
-            "Lumax EZ", "Prefix", "Princep 4L", "Sequence", "Touchdown HiTech", "Touchdown Total"};
+    //public String[] aatrexCompatible = {"Atrazine", "Bicep II Magnum", "Bicep II Magnum FC",
+      //              "Bicep Lite II Magnum"};
+    //public String[] atrazineCompatible = {"Aatrex"};
+    //public String[] bicepCompatible = {"Bicep II Magnum", "Bicep II Magnum FC", "Bicep Lite II Magnum"};
+    //public String[] lexarlumaxCompatible = {"Lexar EZ", "Lumax EZ"};
+    //public String[] tdhtCompatible = {"Touchdown Total"};
+    //public String[] products = {"Aatrex", "Atrazine", "Bicep II Magnum", "Bicep II Magnum FC",
+      //      "Bicep Lite II Magnum", "Boundary", "Dual II Magnum", "Flexstar GT 3.5", "Halex GT",
+      //      "Lexar EZ", "Lumax EZ", "Prefix", "Princep 4L", "Sequence", "Touchdown HiTech",
+      //      "Touchdown Total"};
+    public final String aatrex = "Aatrex";
+    public final String atrazine = "Atrazine";
+    public final String bicep = "Bicep II Magnum";
+    public final String bicepFC = "Bicep II Magnum FC";
+    public final String bicepLite = "Bicep Lite II Magnum";
+    public final String lexar = "Lexar EZ";
+    public final String lumax = "Lumax EZ";
+    public final String tdht = "Touchdown HiTech";
+    public final String touchdown = "Touchdown Total";
 
     public String previousProduct;
     public String nextProduct;
@@ -44,92 +54,32 @@ public class Toploadable{
 
 
     /**
-     * This method is designed to see if the next product can be loaded on the previous product
-     * without the trailer being washed.
+     * A very confusing series of if statements that determines whether the products are compatible
+     * or not.
      */
-    public void checkProductsByName(){
-
-        switch(Arrays.asList(products).indexOf(previousProduct)){
-
-            case 0:
-                for(String anAatrexCompatible : aatrexCompatible){
-                    if(anAatrexCompatible.equals(nextProduct)){
-                        TopLoadMatrix aatrex = new TopLoadMatrix();
-                        aatrex.startTrue(previousProduct, nextProduct);
-                    }
-                }
-                break;
-            case 1:
-                for(String anAtrazineCompatible : atrazineCompatible){
-                    if(anAtrazineCompatible.equals(nextProduct)){
-                        TopLoadMatrix atrazine = new TopLoadMatrix();
-                        atrazine.startTrue(previousProduct, nextProduct);
-                    }
-                }
-                break;
-            case 2:
-                for(String aBicepCompatible : bicepCompatible){
-                    if(aBicepCompatible.equals(nextProduct)){
-                        TopLoadMatrix bicep = new TopLoadMatrix();
-                        bicep.startTrue(previousProduct, nextProduct);
-                    }
-                }
-                break;
-            case 3:
-                for(String anotherBicepCompatible : bicepCompatible){
-                    if(anotherBicepCompatible.equals(nextProduct)){
-                        TopLoadMatrix aBicep = new TopLoadMatrix();
-                        aBicep.startTrue(previousProduct, nextProduct);
-                    }
-                }
-                break;
-            case 4:
-                for(String yetAnotherBicepCompatible : bicepCompatible){
-                    if(yetAnotherBicepCompatible.equals(nextProduct)){
-                        TopLoadMatrix bBicep = new TopLoadMatrix();
-                        bBicep.startTrue(previousProduct, nextProduct);
-                    }
-                }
-                break;
-            case 6:
-                for(String aDualCompatible : bicepCompatible){
-                    if(aDualCompatible.equals(nextProduct)){
-                        TopLoadMatrix dual = new TopLoadMatrix();
-                        dual.startTrue(previousProduct, nextProduct);
-                    }
-                }
-                break;
-            case 9:
-                for(String aLexarCompatible : lexarlumaxCompatible){
-                    if(aLexarCompatible.equals(nextProduct)){
-                        TopLoadMatrix lexar = new TopLoadMatrix();
-                        lexar.startTrue(previousProduct, nextProduct);
-                    }
-                }
-                break;
-            case 10:
-                for(String aLumaxCompatible : lexarlumaxCompatible){
-                    if(aLumaxCompatible.equals(nextProduct)){
-                        TopLoadMatrix lumax = new TopLoadMatrix();
-                        lumax.startTrue(previousProduct, nextProduct);
-                    }
-                }
-                break;
-            case 14:
-                for(String aTouchdownCompatible : tdhtCompatible){
-                    if(aTouchdownCompatible.equals(nextProduct)){
-                        TopLoadMatrix touchdown = new TopLoadMatrix();
-                        touchdown.startTrue(previousProduct, nextProduct);
-                    }
-                }
-                break;
-            default:
-                TopLoadMatrix matrix = new TopLoadMatrix();
-                matrix.startFalse(previousProduct, nextProduct);
-                break;
-
+    public boolean checkProductsByName(){
+        if(previousProduct.equals(aatrex) && (nextProduct.equals(atrazine) || nextProduct.equals(bicep) ||
+        nextProduct.equals(bicepFC) || nextProduct.equals(bicepLite))){
+            return true;
+        } else if(previousProduct.equals(atrazine) && nextProduct.equals(aatrex)){
+            return true;
+        } else if(previousProduct.equals(bicep) && (nextProduct.equals(bicepFC) ||
+        nextProduct.equals(bicepLite))){
+            return true;
+        } else if(previousProduct.equals(bicepFC) && (nextProduct.equals(bicep) ||
+        nextProduct.equals(bicepLite))){
+            return true;
+        } else if(previousProduct.equals(bicepLite) && (nextProduct.equals(bicep) ||
+        nextProduct.equals(bicepFC))){
+            return true;
+        } else if(previousProduct.equals(lexar) && nextProduct.equals(lumax)){
+            return true;
+        } else if(previousProduct.equals(lumax) && nextProduct.equals(lexar)){
+            return true;
+        } else if(previousProduct.equals(tdht) && nextProduct.equals(touchdown)){
+            return true;
         }
-
+        return false;
     }
 
 }

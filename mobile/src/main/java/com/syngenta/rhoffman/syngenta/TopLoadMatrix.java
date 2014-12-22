@@ -85,6 +85,8 @@ public class TopLoadMatrix extends Activity {
     public void decision(int previousProduct, int nextProduct, String previousProductString,
                          String nextProductString){
 
+        Toploadable toploadable = new Toploadable(previousProductString, nextProductString);
+
         if(previousProduct == nextProduct){
             startTrue(previousProductString, nextProductString);
         } else if(previousProduct == 5 || previousProduct == 7 || previousProduct == 8 ||
@@ -92,9 +94,10 @@ public class TopLoadMatrix extends Activity {
                 previousProduct == 15 || nextProduct == 5 || nextProduct == 7 || nextProduct == 8 ||
                 nextProduct == 11 || nextProduct == 12 || nextProduct == 13 || nextProduct == 15){
             startFalse(previousProductString, nextProductString);
-        } else {
-            Toploadable toploadable = new Toploadable(previousProductString, nextProductString);
-            toploadable.checkProductsByName();
+        } else if(toploadable.checkProductsByName()){
+            startTrue(previousProductString, nextProductString);
+        } else if(!toploadable.checkProductsByName()){
+            startFalse(previousProductString, nextProductString);
         }
 
     }
