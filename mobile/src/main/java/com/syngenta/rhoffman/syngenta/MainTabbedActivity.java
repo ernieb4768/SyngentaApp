@@ -251,10 +251,19 @@ public class MainTabbedActivity extends Activity {
 
             if(previousProduct == nextProduct){
                 startTrue(previousProductString, nextProductString);
-            } else if(previousProduct == 5 || previousProduct == 7 || previousProduct == 8 ||
-                    previousProduct == 11 || previousProduct == 12 || previousProduct == 13 ||
-                    previousProduct == 15 || nextProduct == 5 || nextProduct == 7 || nextProduct == 8 ||
-                    nextProduct == 11 || nextProduct == 12 || nextProduct == 13){
+            } else if(previousProduct == 5 ||
+                    previousProduct == 7 ||
+                    previousProduct == 8 ||
+                    previousProduct == 11 ||
+                    previousProduct == 12 ||
+                    previousProduct == 13 ||
+                    previousProduct == 15 ||
+                    nextProduct == 5 ||
+                    nextProduct == 7 ||
+                    nextProduct == 8 ||
+                    nextProduct == 11 ||
+                    nextProduct == 12 ||
+                    nextProduct == 13){
                 startFalse(previousProductString, nextProductString);
             } else if(toploadable.checkProductsByName()){
                 startTrue(previousProductString, nextProductString);

@@ -72,14 +72,6 @@ public class MainActivity extends Activity {
 
     }
 
-    public void startTopLoadMatrix(View view){
-
-        Intent intent = new Intent(this, TopLoadMatrix.class);
-
-        startActivity(intent);
-
-    }
-
     public void startProductWeight(View view){
 
         Intent intent1 = new Intent(this, ProductWeightInfo.class);
