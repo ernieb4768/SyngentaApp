@@ -64,7 +64,8 @@ public class MainActivity extends Activity {
 
     }
 
-    // The only one that will work for now. It starts an Intent to open the Help activity.
+    // The only one that will work for now. It starts an Intent to open the Help activity... which
+    // is actually completely useless.
     public void openHelp(){
 
         Intent helpIntent = new Intent(this, Help.class);
