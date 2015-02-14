@@ -88,6 +88,7 @@
     <string name="exit">Exit</string>
     <string name="flexstar">Flexstar GT 3.5\nWeight: 10.08 lbs/gal\nMax: 4300 gallons</string>
     <string name="halex">Halex GT\nWeight: 10.08 lbs/gal\nMax: 4420 gallons</string>
+    <string name="hello_world">Hello world!</string>
     <string name="lexar">Lexar EZ\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
     <string name="lumax">Lumax EZ\nWeight: 9.12 lbs/gal\nMax: 5000 gallons</string>
     <!-- From: file:/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/src/main/res/values/strings_activity_settings.xml -->
@@ -120,6 +121,8 @@
     <string name="title_activity_check_products">Check Products</string>
     <string name="title_activity_display_product">Product</string>
     <string name="title_activity_help">Help</string>
+    <string name="title_activity_launcher">Syngenta</string>
+    <string name="title_activity_main_tabbed">MainTabbedActivity</string>
     <string name="title_activity_product_weight_info">Product Weight Info</string>
     <!-- From: file:/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/src/main/res/values/strings_activity_settings.xml -->
     <eat-comment/>
@@ -129,6 +132,9 @@
     <string name="title_activity_top_load_false">TopLoadFalse</string>
     <string name="title_activity_top_load_matrix">Top Load Matrix</string>
     <string name="title_activity_top_load_true">TopLoadTrue</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
     <string name="topLoad">Top Load Matrix</string>
     <string name="touchdownHitech">Touchdown HiTech\nWeight: 11.73 lbs/gal\nMax: 3800 gallons</string>
     <string name="touchdownTotal">Touchdown Total\nWeight: 11.13 lbs/gal\nMax: 4000 gallons</string>

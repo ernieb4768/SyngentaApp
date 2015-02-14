@@ -26,40 +26,48 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_action_search=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
+        public static final int ic_background=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int ic_launcher_background=0x7f020003;
     }
     public static final class id {
-        public static final int action_help=0x7f0a000a;
-        public static final int action_search=0x7f0a000b;
-        public static final int action_settings=0x7f0a0009;
+        public static final int action_help=0x7f0a000c;
+        public static final int action_search=0x7f0a000d;
+        public static final int action_settings=0x7f0a000b;
+        public static final int pager=0x7f0a0002;
         public static final int productWeightButton=0x7f0a0001;
-        public static final int productWeightInfoButton=0x7f0a0003;
-        public static final int product_1=0x7f0a0004;
-        public static final int product_2=0x7f0a0005;
-        public static final int products_spinner1=0x7f0a0006;
-        public static final int products_spinner2=0x7f0a0007;
-        public static final int products_spinner_weight=0x7f0a0002;
+        public static final int productWeightInfoButton=0x7f0a0004;
+        public static final int product_1=0x7f0a0005;
+        public static final int product_2=0x7f0a0006;
+        public static final int products_spinner1=0x7f0a0007;
+        public static final int products_spinner2=0x7f0a0008;
+        public static final int products_spinner_weight=0x7f0a0003;
+        public static final int section_label=0x7f0a000a;
         public static final int topLoadButton=0x7f0a0000;
-        public static final int topLoadMatrixButton=0x7f0a0008;
+        public static final int topLoadMatrixButton=0x7f0a0009;
     }
     public static final class layout {
         public static final int activity_display_product=0x7f030000;
         public static final int activity_help=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int activity_product_weight_info=0x7f030003;
-        public static final int activity_top_load_false=0x7f030004;
-        public static final int activity_top_load_matrix=0x7f030005;
-        public static final int activity_top_load_true=0x7f030006;
+        public static final int activity_launcher=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int activity_main_tabbed=0x7f030004;
+        public static final int activity_product_weight_info=0x7f030005;
+        public static final int activity_top_load_false=0x7f030006;
+        public static final int activity_top_load_matrix=0x7f030007;
+        public static final int activity_top_load_true=0x7f030008;
+        public static final int fragment_product_info =0x7f030009;
     }
     public static final class menu {
         public static final int check_products=0x7f090000;
         public static final int main=0x7f090001;
         public static final int menu_display_product=0x7f090002;
         public static final int menu_help=0x7f090003;
-        public static final int menu_top_load_false=0x7f090004;
-        public static final int menu_top_load_true=0x7f090005;
-        public static final int product_weight_info=0x7f090006;
-        public static final int top_load_matrix=0x7f090007;
+        public static final int menu_main_tabbed=0x7f090004;
+        public static final int menu_top_load_false=0x7f090005;
+        public static final int menu_top_load_true=0x7f090006;
+        public static final int product_weight_info=0x7f090007;
+        public static final int top_load_matrix=0x7f090008;
     }
     public static final class string {
         public static final int Aatrex=0x7f070000;
@@ -93,40 +101,46 @@ public final class R {
         public static final int exit=0x7f07001c;
         public static final int flexstar=0x7f07001d;
         public static final int halex=0x7f07001e;
-        public static final int lexar=0x7f07001f;
-        public static final int lumax=0x7f070020;
-        public static final int pref_default_display_name=0x7f070021;
-        public static final int pref_description_social_recommendations=0x7f070022;
-        public static final int pref_header_data_sync=0x7f070023;
-        public static final int pref_header_general=0x7f070024;
-        public static final int pref_header_notifications=0x7f070025;
-        public static final int pref_ringtone_silent=0x7f070026;
-        public static final int pref_title_add_friends_to_messages=0x7f070027;
-        public static final int pref_title_display_name=0x7f070028;
-        public static final int pref_title_new_message_notifications=0x7f070029;
-        public static final int pref_title_ringtone=0x7f07002a;
-        public static final int pref_title_social_recommendations=0x7f07002b;
-        public static final int pref_title_sync_frequency=0x7f07002c;
-        public static final int pref_title_system_sync_settings=0x7f07002d;
-        public static final int pref_title_vibrate=0x7f07002e;
-        public static final int prefix=0x7f07002f;
-        public static final int princep=0x7f070030;
-        public static final int product1=0x7f070031;
-        public static final int product2=0x7f070032;
-        public static final int productWeight=0x7f070033;
-        public static final int screwed=0x7f070034;
-        public static final int sequence=0x7f070035;
-        public static final int title_activity_check_products=0x7f070036;
-        public static final int title_activity_display_product=0x7f070037;
-        public static final int title_activity_help=0x7f070038;
-        public static final int title_activity_product_weight_info=0x7f070039;
-        public static final int title_activity_settings=0x7f07003a;
-        public static final int title_activity_top_load_false=0x7f07003b;
-        public static final int title_activity_top_load_matrix=0x7f07003c;
-        public static final int title_activity_top_load_true=0x7f07003d;
-        public static final int topLoad=0x7f07003e;
-        public static final int touchdownHitech=0x7f07003f;
-        public static final int touchdownTotal=0x7f070040;
+        public static final int hello_world=0x7f07001f;
+        public static final int lexar=0x7f070020;
+        public static final int lumax=0x7f070021;
+        public static final int pref_default_display_name=0x7f070022;
+        public static final int pref_description_social_recommendations=0x7f070023;
+        public static final int pref_header_data_sync=0x7f070024;
+        public static final int pref_header_general=0x7f070025;
+        public static final int pref_header_notifications=0x7f070026;
+        public static final int pref_ringtone_silent=0x7f070027;
+        public static final int pref_title_add_friends_to_messages=0x7f070028;
+        public static final int pref_title_display_name=0x7f070029;
+        public static final int pref_title_new_message_notifications=0x7f07002a;
+        public static final int pref_title_ringtone=0x7f07002b;
+        public static final int pref_title_social_recommendations=0x7f07002c;
+        public static final int pref_title_sync_frequency=0x7f07002d;
+        public static final int pref_title_system_sync_settings=0x7f07002e;
+        public static final int pref_title_vibrate=0x7f07002f;
+        public static final int prefix=0x7f070030;
+        public static final int princep=0x7f070031;
+        public static final int product1=0x7f070032;
+        public static final int product2=0x7f070033;
+        public static final int productWeight=0x7f070034;
+        public static final int screwed=0x7f070035;
+        public static final int sequence=0x7f070036;
+        public static final int title_activity_check_products=0x7f070037;
+        public static final int title_activity_display_product=0x7f070038;
+        public static final int title_activity_help=0x7f070039;
+        public static final int title_activity_launcher=0x7f07003a;
+        public static final int title_activity_main_tabbed=0x7f07003b;
+        public static final int title_activity_product_weight_info=0x7f07003c;
+        public static final int title_activity_settings=0x7f07003d;
+        public static final int title_activity_top_load_false=0x7f07003e;
+        public static final int title_activity_top_load_matrix=0x7f07003f;
+        public static final int title_activity_top_load_true=0x7f070040;
+        public static final int title_section1=0x7f070041;
+        public static final int title_section2=0x7f070042;
+        public static final int title_section3=0x7f070043;
+        public static final int topLoad=0x7f070044;
+        public static final int touchdownHitech=0x7f070045;
+        public static final int touchdownTotal=0x7f070046;
     }
     public static final class style {
         /**  Customize your theme here. 
