@@ -2,11 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jar="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.3/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/classes-73af8e4df3d733521b2bf767468ed9071cfd9ee6.jar" />
+        sha1="2c2071dcaf7a008c3b01a6381a33be55396bab09">
+        <dex dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/classes-302cd0c9c59a3b157ca1091a09df6c9d5fe5daea.jar" />
+    </item>
+    <item
+        jar="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0dcc55e70f7ebf7238fe2ec53f662eb378ab2668">
+        <dex dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-095b537891cdcb6e831a220c4e72a2f164934932.jar" />
+    </item>
+    <item
+        jar="/home/rhoffman/android-sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-a8bc53cb6f5cdba3c310f3ae7e98a7766172f2e1.jar" />
     </item>
     <item
         jar="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
@@ -16,11 +30,11 @@
         <dex dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-ff2f7193a64ed2746bae5f41c0a1b08660114bf5.jar" />
     </item>
     <item
-        jar="/home/rhoffman/android-sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jar="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-a8bc53cb6f5cdba3c310f3ae7e98a7766172f2e1.jar" />
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/pre-dexed/debug/classes-73af8e4df3d733521b2bf767468ed9071cfd9ee6.jar" />
     </item>
 
 </items>

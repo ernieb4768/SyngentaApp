@@ -292,6 +292,8 @@ public class MainTabbedActivity extends Activity {
          * The fragment argument representing the section number for this fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
+        private Spinner spinner1;
+        private Spinner spinner2;
 
         /**
          * Returns a new instance of this fragment for the given section number.
@@ -312,9 +314,15 @@ public class MainTabbedActivity extends Activity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState){
-            // Initialize the first spinner and get the selected item.
-            final Spinner spinner1 = (Spinner) getActivity().findViewById(R.id.products_spinner1);
-            spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+
+            final View rootView = inflater.inflate(R.layout.fragment_top_load_matrix, container, false);
+
+            setSpinnerContent(rootView);
+
+            // Set the onClick listener for spinner1 and wait for an item to be selected.
+            TopLoadMatrixFragment.this.spinner1
+                    .setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+
                 @Override
                 public void onItemSelected(AdapterView<?> parent1, View view, int position1, long id1){
                     parent1.getItemAtPosition(position1);
@@ -326,10 +334,9 @@ public class MainTabbedActivity extends Activity {
                 }
             });
 
-
-            // Initialize the second spinner and get the selected item.
-            final Spinner spinner2 = (Spinner) getActivity().findViewById(R.id.products_spinner2);
-            spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+            // Set the onClick listener for spinner2 and wait for an item to be selected.
+            TopLoadMatrixFragment.this.spinner2
+                    .setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
                 @Override
                 public void onItemSelected(AdapterView<?> parent2, View view, int position2, long id2){
                     parent2.getItemAtPosition(position2);
@@ -342,7 +349,10 @@ public class MainTabbedActivity extends Activity {
 
             });
 
-            Button button = (Button) getActivity().findViewById(R.id.topLoadMatrixButton);
+            // Create a button that, when clicked, will get the position of each spinner when clicked
+            // as well as the String of each spinner, and pass those as arguments to the decision
+            // function.
+            Button button = (Button) rootView.findViewById(R.id.topLoadMatrixButton);
             button.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
@@ -354,8 +364,41 @@ public class MainTabbedActivity extends Activity {
                 }
             });
 
-            View rootView = inflater.inflate(R.layout.fragment_top_load_matrix, container, false);
             return rootView;
+        }
+
+        // A function to initialize the two spinners, apply the array adapters, and display it back
+        // upon creation of the view.
+        private void setSpinnerContent(View view){
+
+            // Initialize the first spinner.
+            TopLoadMatrixFragment.this.spinner1 = (Spinner) view.findViewById(R.id.products_spinner1);
+
+            // Create the first array adapter.
+            ArrayAdapter<CharSequence> spinnerAdapter1 = ArrayAdapter
+                    .createFromResource(this.getActivity(), R.array.product_list,
+                            android.R.layout.simple_spinner_item);
+
+            // Specify the layout to use when the list of choices appears.
+            spinnerAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+            // Apply the adapter to populate spinner with the array.
+            spinner1.setAdapter(spinnerAdapter1);
+
+            // Initialize the second spinner.
+            TopLoadMatrixFragment.this.spinner2 = (Spinner) view.findViewById(R.id.products_spinner2);
+
+            // Create the second array adapter.
+            ArrayAdapter<CharSequence> spinnerAdapter2 = ArrayAdapter
+                    .createFromResource(this.getActivity(), R.array.product_list,
+                            android.R.layout.simple_spinner_item);
+
+            // Specify the layout to use when the list of choices appears.
+            spinnerAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+            // Apply the adapter to populate the spinner with the array.
+            TopLoadMatrixFragment.this.spinner2.setAdapter(spinnerAdapter2);
+
         }
 
         // This function checks if a and b are equal. If they are there is no need to go any
