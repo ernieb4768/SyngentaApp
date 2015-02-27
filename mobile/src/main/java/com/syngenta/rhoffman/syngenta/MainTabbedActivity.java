@@ -36,23 +36,49 @@ public class MainTabbedActivity extends Activity {
      */
     ViewPager mViewPager;
 
-    // Create the Product objects
-    final static Product aatrex = new Product("Aatrex 4L", 9.15, 5000, null);
-    final static Product atrazine = new Product("Atrazine 4L", 9.15, 5000, null);
-    final static Product bicep = new Product("Bicep II Magnum", 9.31, 5000, null);
-    final static Product bicepFC = new Product("Bicep II Magnum FC", 9.31, 5000, null);
-    final static Product bicepLite = new Product("Bicep LITE II Magnum", 9.31, 5000, null);
-    final static Product boundary = new Product("Boundary", 9.01, 5000, null);
-    final static Product dual = new Product("Dual II Magnum", 9.28, 5000, null);
-    final static Product flexstar = new Product("Flexstar GT 3.5", 10.08, 4300, null);
-    final static Product halex = new Product("Halex GT", 10.08, 4420, null);
-    final static Product lexar = new Product("Lexar EZ", 9.15, 5000, null);
-    final static Product lumax = new Product("Lumax EZ", 9.12, 5000, null);
-    final static Product prefix = new Product("Prefix", 9.32, 5000, null);
-    final static Product princep = new Product("Princep 4L", 9.47, 4800, null);
-    final static Product sequence = new Product("Sequence", 10.2, 4400, null);
-    final static Product touchdownHT = new Product("Touchdown HiTech", 11.73, 3800, null);
-    final static Product touchdown = new Product("Touchdown Total", 11.13, 4000, null);
+    // Create the Products
+    final static Product aatrex = new Product("Aatrex 4L", 9.15, 5000);
+    final static Product atrazine = new Product("Atrazine 4L", 9.15, 5000);
+    final static Product bicep = new Product("Bicep II Magnum", 9.31, 5000);
+    final static Product bicepFC = new Product("Bicep II Magnum FC", 9.31, 5000);
+    final static Product bicepLite = new Product("Bicep LITE II Magnum", 9.31, 5000);
+    final static Product boundary = new Product("Boundary", 9.01, 5000);
+    final static Product dual = new Product("Dual II Magnum", 9.28, 5000);
+    final static Product flexstar = new Product("Flexstar GT 3.5", 10.08, 4300);
+    final static Product halex = new Product("Halex GT", 10.08, 4420);
+    final static Product lexar = new Product("Lexar EZ", 9.15, 5000);
+    final static Product lumax = new Product("Lumax EZ", 9.12, 5000);
+    final static Product prefix = new Product("Prefix", 9.32, 5000);
+    final static Product princep = new Product("Princep 4L", 9.47, 4800);
+    final static Product sequence = new Product("Sequence", 10.2, 4400);
+    final static Product touchdownHT = new Product("Touchdown HiTech", 11.73, 3800);
+    final static Product touchdown = new Product("Touchdown Total", 11.13, 4000);
+
+    // Initialize the arrays of products for each bulk site.
+    final static String[] mtsProducts = {"Aatrex 4L", "Atrazine 4L", "Bicep II Magnum", "Brawl II ATZ",
+            "Cinch + Atrazine", "Infantry", "Lexar EZ", "Lumax EZ", "Medal II ATZ", "Sequence"};
+    final static String[] desMoinesProducts = {"Touchdown Total"};
+    final static String[] farmerCityProducts = {"Aatrex 4L", "Bicep II Magnum", "Brawl II ATZ",
+            "Charger Max ATZ", "Halex GT", "Lexar EZ", "Lumax EZ", "Medal II ATZ", "Touchdown Total"};
+    final static String[] greensburgProducts = {"Flexstar GT 3.5", "Lexar EZ", "Lumax EZ", "Prefix",
+            "Princep", "Touchdown HiTech", "Touchdown Total"};
+    final static String[] memphisProducts = {"Prefix", "Touchdown Total"};
+    final static String[] mortonProducts = {"Aatrex 4L", "Atrazine 4L", "Bicep LITE II Magnum",
+            "Cinch + Atrazine", "Infantry", "Lexar EZ", "Lumax EZ", "Prefix"};
+    final static String[] saintLouisProducts = {"Aatrex 4L", "Atrazine 4L", "Halex GT", "Lexar EZ"};
+    final static String[] websterCityProducts = {"Halex GT", "Lexar EZ"};
+    final static String[] wortonProducts = {"Touchdown Total"};
+
+    // Create the Bulk Sites
+    final static BulkSite mts = new BulkSite("Mount Sterling, OH", 8, 4, mtsProducts);
+    final static BulkSite desMoines = new BulkSite("Des Moines, IA", 8, 4, desMoinesProducts);
+    final static BulkSite farmerCity = new BulkSite("Farmer City, IL", 7, 3, farmerCityProducts);
+    final static BulkSite gre = new BulkSite("Greensburg, IN", 7, 3, greensburgProducts);
+    final static BulkSite memphis = new BulkSite("Memphis, TN", 6, 2, memphisProducts);
+    final static BulkSite morton = new BulkSite("Morton, IL", 7, 3, mortonProducts);
+    final static BulkSite stl = new BulkSite("Saint Louis, MO", 6, 3, saintLouisProducts);
+    final static BulkSite websterCity = new BulkSite("Webster City, IA", 0, 0, websterCityProducts);
+    final static BulkSite worton = new BulkSite("Worton, MD", 7, 3, wortonProducts);
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -206,7 +232,6 @@ public class MainTabbedActivity extends Activity {
 
                 }
             });
-
 
             return rootView;
         }
@@ -460,6 +485,9 @@ public class MainTabbedActivity extends Activity {
         /**
          * Returns a new instance of this fragment for the given section number.
          */
+
+        private ListView listView;
+
         public static BulkSiteFragment newInstance(int sectionNumber){
 
             BulkSiteFragment fragment = new BulkSiteFragment();
@@ -478,6 +506,28 @@ public class MainTabbedActivity extends Activity {
                                  Bundle savedInstanceState){
 
             View rootView = inflater.inflate(R.layout.fragment_bulk_site, container, false);
+
+            // Initialize the array of Bulk Sites
+            String[] bulkSites = {mts.location, desMoines.location, farmerCity.location, gre.location,
+                memphis.location, morton.location, stl.location, websterCity.location, worton.location};
+
+            // Set up the ArrayAdapter
+            ArrayAdapter<String> stringArrayAdapter =
+                    new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_list_item_1, bulkSites);
+
+            listView = (ListView) rootView.findViewById(R.id.bulkSiteListView);
+            listView.setAdapter(stringArrayAdapter);
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id){
+
+                    //displayProductInfo(position);
+
+                }
+            });
+
             return rootView;
         }
     }

@@ -15,6 +15,14 @@ public class Product {
     public int capacity;
     public String description;
 
+    public Product(String productName, double productWeight, int trailerCapacity){
+
+        name = productName;
+        weight = productWeight;
+        capacity = trailerCapacity;
+
+    }
+
     public Product(String productName, double productWeight, int trailerCapacity, String productDescription) {
 
         name = productName;
