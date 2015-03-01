@@ -185,12 +185,12 @@ public class MainTabbedActivity extends Activity {
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
 
+        // Initialize the List View
+        private ListView listView;
+
         /**
          * Returns a new instance of this fragment for the given section number.
          */
-
-        // Initialize the List View
-        private ListView listView;
 
         public static ProductInfoFragment newInstance(int sectionNumber){
 
@@ -388,9 +388,12 @@ public class MainTabbedActivity extends Activity {
 
             });
 
-            // Create a button that, when clicked, will get the position of each spinner when clicked
-            // as well as the String of each spinner, and pass those as arguments to the decision
-            // function.
+             /**
+              * Create a button that, when clicked, will get the position of each spinner when clicked
+              * as well as the String of each spinner, and pass those as arguments to the decision
+              * function.
+              */
+
             Button button = (Button) rootView.findViewById(R.id.topLoadMatrixButton);
             button.setOnClickListener(new View.OnClickListener(){
                 @Override
@@ -406,13 +409,12 @@ public class MainTabbedActivity extends Activity {
             return rootView;
         }
 
-        // A function to initialize the two spinners, apply the array adapters, and display it back
-        // upon creation of the view.
-        //private void setSpinnerContent(View view){}
+        /**
+         * This function checks if a and b are equal. If they are there is no need to go any
+         * further and it will start activity_top_load_true. If they are not equal, there will need
+         * to be further decisions that will be passed on.
+         */
 
-        // This function checks if a and b are equal. If they are there is no need to go any
-        // further and it will start activity_top_load_true. If they are not equal,
-        // there will need to be further decisions that will be passed on.
         public void decision(int previousProduct, int nextProduct, String previousProductString,
                              String nextProductString){
 
@@ -482,11 +484,11 @@ public class MainTabbedActivity extends Activity {
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
 
+        private ListView listView;
+
         /**
          * Returns a new instance of this fragment for the given section number.
          */
-
-        private ListView listView;
 
         public static BulkSiteFragment newInstance(int sectionNumber){
 
@@ -508,27 +510,78 @@ public class MainTabbedActivity extends Activity {
             View rootView = inflater.inflate(R.layout.fragment_bulk_site, container, false);
 
             // Initialize the array of Bulk Sites
-            String[] bulkSites = {mts.location, desMoines.location, farmerCity.location, gre.location,
-                memphis.location, morton.location, stl.location, websterCity.location, worton.location};
+            String[] bulkSites = {desMoines.location, farmerCity.location, gre.location,
+                memphis.location, morton.location, mts.location, stl.location, websterCity.location,
+                worton.location};
 
             // Set up the ArrayAdapter
-            ArrayAdapter<String> stringArrayAdapter =
+            ArrayAdapter<String> bulkSiteArrayAdapter =
                     new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_list_item_1, bulkSites);
 
             listView = (ListView) rootView.findViewById(R.id.bulkSiteListView);
-            listView.setAdapter(stringArrayAdapter);
+            listView.setAdapter(bulkSiteArrayAdapter);
 
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id){
 
-                    //displayProductInfo(position);
+                    displayBulkSiteInfo(position);
 
                 }
             });
 
             return rootView;
         }
+
+        public void displayBulkSiteInfo(int position){
+
+            switch(position){
+
+                case 0:
+                    startBulkSite(desMoines.productList, desMoines.location);
+                    break;
+                case 1:
+                    startBulkSite(farmerCity.productList, farmerCity.location);
+                    break;
+                case 2:
+                    startBulkSite(gre.productList, gre.location);
+                    break;
+                case 3:
+                    startBulkSite(memphis.productList, memphis.location);
+                    break;
+                case 4:
+                    startBulkSite(morton.productList, morton.location);
+                    break;
+                case 5:
+                    startBulkSite(mts.productList, mts.location);
+                    break;
+                case 6:
+                    startBulkSite(stl.productList, stl.location);
+                    break;
+                case 7:
+                    startBulkSite(websterCity.productList, websterCity.location);
+                    break;
+                case 8:
+                    startBulkSite(worton.productList, worton.location);
+                    break;
+
+            }
+
+        }
+
+        public void startBulkSite(String[] allProducts, String name){
+
+            Intent bulkSiteIntent = new Intent(BulkSiteFragment.this.getActivity(), DisplayBulkSite.class);
+
+            Bundle bulkSiteBundle = new Bundle();
+            bulkSiteBundle.putString("BULK_SITE", name);
+            bulkSiteBundle.putStringArray("PRODUCT_LIST", allProducts);
+            bulkSiteIntent.putExtras(bulkSiteBundle);
+
+            startActivity(bulkSiteIntent);
+
+        }
+
     }
 }

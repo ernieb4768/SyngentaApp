@@ -3,27 +3,9 @@
 
     <string name="app_name">Syngenta</string>
     <string name="action_settings">Settings</string>
-    <string name="action_help">Help</string>
-    <string name="action_search">Search</string>
     <string name="product1">Previous Product</string>
     <string name="product2">Next Product</string>
     <string name="button_submit">Submit</string>
-    <string name="Aatrex">Aatrex</string>
-    <string name="Atrazine">Atrazine</string>
-    <string name="Bicep">Bicep II Magnum</string>
-    <string name="BicepFC">Bicep II Magnum FC</string>
-    <string name="BicepL">Bicep Lite II Magnum</string>
-    <string name="Boundary">Boundary</string>
-    <string name="Dual">Dual II Magnum</string>
-    <string name="Flexstar">Flexstar GT 3.5</string>
-    <string name="Halex">Halex GT</string>
-    <string name="Lexar">Lexar EZ</string>
-    <string name="Lumax">Lumax EZ</string>
-    <string name="Prefix">Prefix</string>
-    <string name="Princep">Princep 4L</string>
-    <string name="Sequence">Sequence</string>
-    <string name="HiTech">Touchdown HiTech</string>
-    <string name="Touchdown">Touchdown Total</string>
 
     <string-array name="product_list">
         <item>Aatrex</item>
@@ -44,44 +26,17 @@
         <item>Touchdown Total</item>
     </string-array>
 
-    <string name="title_activity_check_products">Check Products</string>
-    <string name="topLoad">Top Load Matrix</string>
-    <string name="productWeight">Product Weight</string>
-    <string name="title_activity_product_weight_info">Product Weight Info</string>
-    <string name="title_activity_top_load_matrix">Top Load Matrix</string>
-    <string name="aatrex">Aatrex 4L\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
-    <string name="atrazine">Atrazine 4L\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
-    <string name="bicepIIMagnum">Bicep II Magnum\nWeight: 9.31 lbs/gal\nMax: 5000 gallons</string>
-    <string name="bicepIIMagnumFC">Bicep II Magnum FC\nWeight: 9.31 lbs/gal\nMax: 5000 gallons</string>
-    <string name="bicepLiteIIMagnum">Bicep LITE II Magnum\nWeight: 9.31 lbs/gal\nMax: 5000 gallons</string>
-    <string name="boundary">Boundary\nWeight: 9.01 lbs/gal\nMax: 5000 gallons</string>
-    <string name="dualIIMagnum">Dual II Magnum\nWeight: 9.28 lbs/gal\nMax: 5000 gallons</string>
-    <string name="flexstar">Flexstar GT 3.5\nWeight: 10.08 lbs/gal\nMax: 4300 gallons</string>
-    <string name="halex">Halex GT\nWeight: 10.08 lbs/gal\nMax: 4420 gallons</string>
-    <string name="lexar">Lexar EZ\nWeight: 9.15 lbs/gal\nMax: 5000 gallons</string>
-    <string name="lumax">Lumax EZ\nWeight: 9.12 lbs/gal\nMax: 5000 gallons</string>
-    <string name="prefix">Prefix\nWeight: 9.32 lbs/gal\nMax: 5000</string>
-    <string name="princep">Princep 4L\nWeight: 9.47 lbs/gal\nMax: 4800 gallons</string>
-    <string name="sequence">Sequence\nWeight: 10.2 lbs/gal\nMax: 4400 gallons</string>
-    <string name="touchdownTotal">Touchdown Total\nWeight: 11.13 lbs/gal\nMax: 4000 gallons</string>
-    <string name="touchdownHitech">Touchdown HiTech\nWeight: 11.73 lbs/gal\nMax: 3800 gallons</string>
-    <string name="title_activity_top_load_true">TopLoadTrue</string>
-    <string name="title_activity_top_load_false">TopLoadFalse</string>
+    <string name="title_activity_top_load">Top Load</string>
     <string name="title_activity_display_product">Product</string>
-    <string name="exit">Exit</string>
-    <string name="title_activity_help">Help</string>
-    <string name="screwed">I\'m sorry, but I\'m actually no help at all. Good luck though, seriously.</string>
     <string name="title_activity_launcher">Syngenta</string>
-    <string name="title_activity_main_tabbed">MainTabbedActivity</string>
 
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section1">Products</string>
+    <string name="title_section2">Top Load Matrix</string>
+    <string name="title_section3">Bulk Sites</string>
+    <string name="title_activity_display_bulk_site">DisplayBulkSite</string>
 
     <string name="hello_world">Hello world!</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

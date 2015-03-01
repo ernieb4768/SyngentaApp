@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.syngenta.rhoffman.syngenta.TopLoadTrue"
-            android:label="@string/title_activity_top_load_true"
+            android:label="@string/title_activity_top_load"
             android:parentActivityName="com.syngenta.rhoffman.syngenta.MainTabbedActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -23,7 +23,7 @@
         </activity>
         <activity
             android:name="com.syngenta.rhoffman.syngenta.TopLoadFalse"
-            android:label="@string/title_activity_top_load_false"
+            android:label="@string/title_activity_top_load"
             android:parentActivityName="com.syngenta.rhoffman.syngenta.MainTabbedActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -46,6 +46,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.syngenta.rhoffman.syngenta.DisplayBulkSite"
+            android:label="@string/title_activity_display_bulk_site"
+            android:parentActivityName="com.syngenta.rhoffman.syngenta.MainTabbedActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.syngenta.rhoffman.syngenta.MainTabbedActivity" />
         </activity>
     </application>
 
