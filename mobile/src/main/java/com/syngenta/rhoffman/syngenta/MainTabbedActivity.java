@@ -9,6 +9,9 @@ import android.content.Intent;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -185,7 +188,7 @@ public class MainTabbedActivity extends Activity {
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         // Initialize the List View
-        private ListView listView;
+        private RecyclerView recyclerView;
 
         /**
          * Returns a new instance of this fragment for the given section number.
@@ -219,18 +222,21 @@ public class MainTabbedActivity extends Activity {
             ArrayAdapter<String> stringArrayAdapter =
                     new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_list_item_1, products);
 
-            listView = (ListView) rootView.findViewById(R.id.productInfoListView);
-            listView.setAdapter(stringArrayAdapter);
+            recyclerView = (RecyclerView) rootView.findViewById(R.id.productInfoRecyclerView);
+            recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
+            recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            recyclerView.setAdapter(stringArrayAdapter);
+
+            /*recyclerView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id){
 
                     displayProductInfo(position);
 
-                }
-            });
+                }*/
+            //});
 
             return rootView;
         }
