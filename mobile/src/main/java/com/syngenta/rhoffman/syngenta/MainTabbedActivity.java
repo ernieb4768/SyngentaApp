@@ -86,7 +86,6 @@ public class MainTabbedActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_tabbed);
 
-
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
@@ -539,31 +538,31 @@ public class MainTabbedActivity extends Activity {
             switch(position){
 
                 case 0:
-                    startBulkSite(desMoines.productList, desMoines.location);
+                    startBulkSite(desMoinesProducts, desMoines.location);
                     break;
                 case 1:
-                    startBulkSite(farmerCity.productList, farmerCity.location);
+                    startBulkSite(farmerCityProducts, farmerCity.location);
                     break;
                 case 2:
-                    startBulkSite(gre.productList, gre.location);
+                    startBulkSite(greensburgProducts, gre.location);
                     break;
                 case 3:
-                    startBulkSite(memphis.productList, memphis.location);
+                    startBulkSite(memphisProducts, memphis.location);
                     break;
                 case 4:
-                    startBulkSite(morton.productList, morton.location);
+                    startBulkSite(mortonProducts, morton.location);
                     break;
                 case 5:
-                    startBulkSite(mts.productList, mts.location);
+                    startBulkSite(mtsProducts, mts.location);
                     break;
                 case 6:
-                    startBulkSite(stl.productList, stl.location);
+                    startBulkSite(saintLouisProducts, stl.location);
                     break;
                 case 7:
-                    startBulkSite(websterCity.productList, websterCity.location);
+                    startBulkSite(websterCityProducts, websterCity.location);
                     break;
                 case 8:
-                    startBulkSite(worton.productList, worton.location);
+                    startBulkSite(wortonProducts, worton.location);
                     break;
 
             }

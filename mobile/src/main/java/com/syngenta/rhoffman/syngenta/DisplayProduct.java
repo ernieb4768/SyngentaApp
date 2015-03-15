@@ -3,13 +3,13 @@ package com.syngenta.rhoffman.syngenta;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-
 public class DisplayProduct extends Activity {
+
+    TextView productTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,14 +17,13 @@ public class DisplayProduct extends Activity {
         setContentView(R.layout.activity_display_product);
 
         Intent display = getIntent();
-        String name = display.getStringExtra("PRODUCT_NAME");
+        String name = display.getExtras().getString("PRODUCT_NAME");
         double weight = display.getExtras().getDouble("PRODUCT_WEIGHT");
         int capacity = display.getExtras().getInt("PRODUCT_CAPACITY");
 
-        TextView textView = new TextView(this);
-        textView.setGravity(Gravity.CENTER);
-        textView.setTextSize(30);
-        textView.setText(name + "\nWeight: " + weight + " lbs/gal\nCapacity: " + capacity + " gallons");
+        productTextView = (TextView) findViewById(R.id.productTextView);
+        productTextView.setTextSize(30);
+        productTextView.setText(name + "\nWeight: " + weight + " lbs/gal\nCapacity: " + capacity + " gallons");
 
     }
 
@@ -33,6 +32,7 @@ public class DisplayProduct extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_display_product, menu);
         return true;
+
     }
 
     @Override

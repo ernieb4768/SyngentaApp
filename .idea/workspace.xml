@@ -44,18 +44,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainTabbedActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainTabbedActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/MainTabbedActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.596027" vertical-offset="7992" max-vertical-offset="10674">
-              <caret line="132" column="9" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5058" max-vertical-offset="10656">
+              <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
               <folding>
-                <element signature="e#6986#7020#0" expanded="true" />
-                <element signature="e#7088#7122#0" expanded="true" />
-                <element signature="e#7190#7224#0" expanded="true" />
-                <element signature="e#9475#9723#0" expanded="true" />
-                <element signature="e#16452#16948#0" expanded="true" />
-                <element signature="e#21441#21690#0" expanded="true" />
+                <element signature="e#9474#9722#0" expanded="true" />
+                <element signature="e#16451#16947#0" expanded="true" />
+                <element signature="e#21440#21689#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,27 +61,40 @@
       <file leaf-file-name="DisplayBulkSite.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/DisplayBulkSite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1296">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1314">
+              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisplayProduct.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DisplayProduct.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/DisplayProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044">
-              <caret line="26" column="104" selection-start-line="26" selection-start-column="104" selection-end-line="26" selection-end-column="104" />
+            <state vertical-scroll-proportion="0.36677116" vertical-offset="108" max-vertical-offset="1044">
+              <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_display_product.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_product.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.384615" vertical-offset="0" max-vertical-offset="378">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="activity_display_bulk_site.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_bulk_site.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.846154" vertical-offset="0" max-vertical-offset="756">
+            <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="756">
               <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
               <folding />
             </state>
@@ -1273,7 +1283,6 @@
         <option value="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/CheckProducts.java" />
         <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_top_load_matrix.xml" />
         <option value="$PROJECT_DIR$/mobile/build.gradle" />
-        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_product.xml" />
         <option value="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/ProductWeightInfo.java" />
         <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_top_load_false.xml" />
         <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_top_load_true.xml" />
@@ -1296,10 +1305,11 @@
         <option value="$PROJECT_DIR$/mobile/src/main/res/layout/fragment_bulk_site.xml" />
         <option value="$PROJECT_DIR$/mobile/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/mobile/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/DisplayProduct.java" />
         <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_bulk_site.xml" />
         <option value="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/DisplayBulkSite.java" />
         <option value="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/MainTabbedActivity.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_product.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/DisplayProduct.java" />
       </list>
     </option>
   </component>
@@ -1518,62 +1528,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Tests">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Syngenta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Syngenta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.syngenta.rhoffman.syngenta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Syngenta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.syngenta.rhoffman.syngenta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1662,6 +1616,62 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="manifests" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Tests">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Syngenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Syngenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.syngenta.rhoffman.syngenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Syngenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.syngenta.rhoffman.syngenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1946,15 +1956,13 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32658023" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781956" sideWeight="0.45461914" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993808" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39849624" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781956" sideWeight="0.5445705" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26256078" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32330826" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50526315" sideWeight="0.41815236" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50526315" sideWeight="0.41815236" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1969,7 +1977,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Mirror" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32330826" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1998,18 +2008,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="918">
           <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
           <folding>
-            <element signature="e#265#300#0" expanded="true" />
-            <element signature="e#335#370#0" expanded="true" />
-            <element signature="e#403#436#0" expanded="true" />
-            <element signature="e#472#505#0" expanded="true" />
-            <element signature="e#839#857#0" expanded="true" />
-            <element signature="e#939#975#0" expanded="true" />
-            <element signature="e#1054#1072#0" expanded="true" />
-            <element signature="e#1264#1300#0" expanded="true" />
-            <element signature="e#1331#1365#0" expanded="true" />
-            <element signature="e#1554#1590#0" expanded="true" />
-            <element signature="e#1621#1655#0" expanded="true" />
-            <element signature="e#2025#2048#0" expanded="true" />
+            <element signature="e#265#300#0" expanded="false" />
+            <element signature="e#335#370#0" expanded="false" />
+            <element signature="e#403#436#0" expanded="false" />
+            <element signature="e#472#505#0" expanded="false" />
+            <element signature="e#839#857#0" expanded="false" />
+            <element signature="e#939#975#0" expanded="false" />
+            <element signature="e#1054#1072#0" expanded="false" />
+            <element signature="e#1264#1300#0" expanded="false" />
+            <element signature="e#1331#1365#0" expanded="false" />
+            <element signature="e#1554#1590#0" expanded="false" />
+            <element signature="e#1621#1655#0" expanded="false" />
+            <element signature="e#2025#2048#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2022,12 +2032,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2382" max-vertical-offset="8694">
           <caret line="338" column="24" selection-start-line="338" selection-start-column="24" selection-end-line="338" selection-end-column="24" />
           <folding>
-            <element signature="e#6986#7020#0" expanded="true" />
-            <element signature="e#7088#7122#0" expanded="true" />
-            <element signature="e#7190#7224#0" expanded="true" />
-            <element signature="e#9475#9723#0" expanded="true" />
-            <element signature="e#16452#16948#0" expanded="true" />
-            <element signature="e#21441#21690#0" expanded="true" />
+            <element signature="e#9474#9722#0" expanded="true" />
+            <element signature="e#16451#16947#0" expanded="true" />
+            <element signature="e#21440#21689#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2037,18 +2044,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="918">
           <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
           <folding>
-            <element signature="e#265#300#0" expanded="true" />
-            <element signature="e#335#370#0" expanded="true" />
-            <element signature="e#403#436#0" expanded="true" />
-            <element signature="e#472#505#0" expanded="true" />
-            <element signature="e#839#857#0" expanded="true" />
-            <element signature="e#939#975#0" expanded="true" />
-            <element signature="e#1054#1072#0" expanded="true" />
-            <element signature="e#1264#1300#0" expanded="true" />
-            <element signature="e#1331#1365#0" expanded="true" />
-            <element signature="e#1554#1590#0" expanded="true" />
-            <element signature="e#1621#1655#0" expanded="true" />
-            <element signature="e#2025#2048#0" expanded="true" />
+            <element signature="e#265#300#0" expanded="false" />
+            <element signature="e#335#370#0" expanded="false" />
+            <element signature="e#403#436#0" expanded="false" />
+            <element signature="e#472#505#0" expanded="false" />
+            <element signature="e#839#857#0" expanded="false" />
+            <element signature="e#939#975#0" expanded="false" />
+            <element signature="e#1054#1072#0" expanded="false" />
+            <element signature="e#1264#1300#0" expanded="false" />
+            <element signature="e#1331#1365#0" expanded="false" />
+            <element signature="e#1554#1590#0" expanded="false" />
+            <element signature="e#1621#1655#0" expanded="false" />
+            <element signature="e#2025#2048#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2291,7 +2298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="7010" max-vertical-offset="9162">
           <caret line="385" column="0" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2310,18 +2316,18 @@
         <state vertical-scroll-proportion="0.34056762" vertical-offset="264" max-vertical-offset="1080">
           <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding>
-            <element signature="e#265#300#0" expanded="true" />
-            <element signature="e#335#370#0" expanded="true" />
-            <element signature="e#403#436#0" expanded="true" />
-            <element signature="e#472#505#0" expanded="true" />
-            <element signature="e#839#857#0" expanded="true" />
-            <element signature="e#939#975#0" expanded="true" />
-            <element signature="e#1054#1072#0" expanded="true" />
-            <element signature="e#1264#1300#0" expanded="true" />
-            <element signature="e#1331#1365#0" expanded="true" />
-            <element signature="e#1554#1590#0" expanded="true" />
-            <element signature="e#1621#1655#0" expanded="true" />
-            <element signature="e#2025#2048#0" expanded="true" />
+            <element signature="e#265#300#0" expanded="false" />
+            <element signature="e#335#370#0" expanded="false" />
+            <element signature="e#403#436#0" expanded="false" />
+            <element signature="e#472#505#0" expanded="false" />
+            <element signature="e#839#857#0" expanded="false" />
+            <element signature="e#939#975#0" expanded="false" />
+            <element signature="e#1054#1072#0" expanded="false" />
+            <element signature="e#1264#1300#0" expanded="false" />
+            <element signature="e#1331#1365#0" expanded="false" />
+            <element signature="e#1554#1590#0" expanded="false" />
+            <element signature="e#1621#1655#0" expanded="false" />
+            <element signature="e#2025#2048#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2343,7 +2349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.1232" vertical-offset="6182" max-vertical-offset="21654">
           <caret line="249" column="21" selection-start-line="249" selection-start-column="21" selection-end-line="249" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2351,7 +2356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2393,28 +2397,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_product.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="593">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/BulkSite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_bulk_site.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.846154" vertical-offset="0" max-vertical-offset="756">
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="756">
           <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
           <folding />
         </state>
@@ -2423,34 +2415,42 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/DisplayProduct.java">
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_product.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044">
-          <caret line="26" column="104" selection-start-line="26" selection-start-column="104" selection-end-line="26" selection-end-column="104" />
+        <state vertical-scroll-proportion="-10.384615" vertical-offset="0" max-vertical-offset="378">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/MainTabbedActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5058" max-vertical-offset="10656">
+          <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+          <folding>
+            <element signature="e#9474#9722#0" expanded="true" />
+            <element signature="e#16451#16947#0" expanded="true" />
+            <element signature="e#21440#21689#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/DisplayBulkSite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1296">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1314">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/MainTabbedActivity.java">
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/DisplayProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.596027" vertical-offset="7992" max-vertical-offset="10674">
-          <caret line="132" column="9" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
-          <folding>
-            <element signature="e#6986#7020#0" expanded="true" />
-            <element signature="e#7088#7122#0" expanded="true" />
-            <element signature="e#7190#7224#0" expanded="true" />
-            <element signature="e#9475#9723#0" expanded="true" />
-            <element signature="e#16452#16948#0" expanded="true" />
-            <element signature="e#21441#21690#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.36677116" vertical-offset="108" max-vertical-offset="1044">
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>

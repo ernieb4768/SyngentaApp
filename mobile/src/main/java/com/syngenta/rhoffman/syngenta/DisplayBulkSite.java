@@ -23,8 +23,9 @@ public class DisplayBulkSite extends Activity {
 
         // Get the info that was passed along with the intent
         Intent site = getIntent();
-        String location = site.getStringExtra("BULK_SITE");
-        String [] allProducts = site.getStringArrayExtra("PRODUCTS_LIST");
+        Bundle bundle = site.getExtras();
+        String location = bundle.getString("BULK_SITE");
+        String [] allProducts = bundle.getStringArray("PRODUCT_LIST");
 
         // Set the TextView and add the text
         bulkSiteTextView = (TextView) findViewById(R.id.locationTextView);
