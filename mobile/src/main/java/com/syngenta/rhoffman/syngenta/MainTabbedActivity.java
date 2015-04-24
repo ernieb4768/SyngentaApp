@@ -1,5 +1,6 @@
 package com.syngenta.rhoffman.syngenta;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
 import android.app.Activity;
@@ -9,8 +10,6 @@ import android.content.Intent;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -22,6 +21,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
+
+import it.gmariotti.cardslib.library.internal.Card;
+import it.gmariotti.cardslib.library.internal.CardArrayAdapter;
+import it.gmariotti.cardslib.library.internal.CardHeader;
+import it.gmariotti.cardslib.library.internal.CardThumbnail;
+import it.gmariotti.cardslib.library.view.CardListView;
 
 
 public class MainTabbedActivity extends Activity {
@@ -189,8 +194,22 @@ public class MainTabbedActivity extends Activity {
 
         // Initialize the List View
         private RecyclerView recyclerView;
+		// Initialize the array of products
+		private String[] products = {aatrex.name, atrazine.name, bicep.name, bicepFC.name, bicepLite.name,
+				boundary.name, dual.name, flexstar.name, halex.name, lexar.name, lumax.name, prefix.name,
+				princep.name, sequence.name, touchdownHT.name, touchdown.name};
 
-        /**
+		private Object[] productObjects = {aatrex, atrazine, bicep, bicepFC, bicepLite, boundary,
+				dual, flexstar, halex, lexar, lumax, prefix, princep, sequence, touchdownHT,
+				touchdown};
+
+        private int[] drawables = {R.mipmap.ic_aatrex, R.mipmap.ic_atrazine, R.mipmap.ic_bicep,
+				R.mipmap.ic_bicep, R.mipmap.ic_bicep,
+				R.mipmap.ic_boundary, R.mipmap.ic_dual, R.mipmap.ic_flexstar, R.mipmap.ic_halex,
+				R.mipmap.ic_lexar, R.mipmap.ic_lumax, R.mipmap.ic_prefix, R.mipmap.ic_princep,
+				R.mipmap.ic_sequence, R.mipmap.ic_touchdown_hitech, R.mipmap.ic_touchdown_total};
+
+		/**
          * Returns a new instance of this fragment for the given section number.
          */
 
@@ -213,90 +232,119 @@ public class MainTabbedActivity extends Activity {
 
             final View rootView = inflater.inflate(R.layout.fragment_product_info, container, false);
 
-            // Initialize the array of products
-            String[] products = {aatrex.name, atrazine.name, bicep.name, bicepFC.name, bicepLite.name,
-                    boundary.name, dual.name, flexstar.name, halex.name, lexar.name, lumax.name, prefix.name,
-                    princep.name, sequence.name, touchdownHT.name, touchdown.name};
 
-            // Set up the ArrayAdapter
-            ArrayAdapter<String> stringArrayAdapter =
-                    new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_list_item_1, products);
-
-            recyclerView = (RecyclerView) rootView.findViewById(R.id.productInfoRecyclerView);
-            recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
-            recyclerView.setItemAnimator(new DefaultItemAnimator());
-
-            recyclerView.setAdapter(stringArrayAdapter);
-
-            /*recyclerView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-
-                    displayProductInfo(position);
-
-                }*/
-            //});
+			initializeCards(rootView);
 
             return rootView;
         }
+
+		private void initializeCards(final View rootView){
+
+			int i;
+
+			ArrayList<Card> cards = new ArrayList<>();
+			for(i = 0; i < products.length; i++){
+
+				Card card = initializeCard(rootView, products[i], i);
+
+				cards.add(card);
+			}
+
+			//Create and set the array adapter so it can be displayed in the list view
+			CardArrayAdapter cardArrayAdapter = new CardArrayAdapter(rootView.getContext(), cards);
+			CardListView cardListView = (CardListView) rootView.findViewById(R.id.card_demo_list);
+			if(cardListView != null){
+				cardListView.setAdapter(cardArrayAdapter);
+			}
+
+		}
+
+		private Card initializeCard(View rootView, String title, final int loopCounter){
+
+			//Create a card
+			Card card = new Card(rootView.getContext());
+
+			//Create the card header
+			CardHeader header = new CardHeader(rootView.getContext());
+
+			//Create the card thumbnail
+			CardThumbnail thumbnail = new CardThumbnail(rootView.getContext());
+
+			header.setTitle(title);
+
+			thumbnail.setDrawableResource(drawables[loopCounter]);
+
+			card.addCardHeader(header);
+			card.addCardThumbnail(thumbnail);
+
+			card.setOnClickListener(new Card.OnCardClickListener() {
+
+				@Override
+				public void onClick(Card card, View view) {
+					displayProductInfo(loopCounter);
+				}
+			});
+
+			return card;
+
+		}
 
         public void displayProductInfo(int position){
 
             switch(position){
                 case 0:
-                    startDisplayProduct(aatrex.name, aatrex.weight, aatrex.capacity);
+                    startDisplayProduct(aatrex.name, aatrex.weight, aatrex.capacity, position);
                     break;
                 case 1:
-                    startDisplayProduct(atrazine.name, atrazine.weight, atrazine.capacity);
+                    startDisplayProduct(atrazine.name, atrazine.weight, atrazine.capacity, position);
                     break;
                 case 2:
-                    startDisplayProduct(bicep.name, bicep.weight, bicep.capacity);
+                    startDisplayProduct(bicep.name, bicep.weight, bicep.capacity, position);
                     break;
                 case 3:
-                    startDisplayProduct(bicepFC.name, bicepFC.weight, bicepFC.capacity);
+                    startDisplayProduct(bicepFC.name, bicepFC.weight, bicepFC.capacity, position);
                     break;
                 case 4:
-                    startDisplayProduct(bicepLite.name, bicepLite.weight, bicepLite.capacity);
+                    startDisplayProduct(bicepLite.name, bicepLite.weight, bicepLite.capacity, position);
                     break;
                 case 5:
-                    startDisplayProduct(boundary.name, boundary.weight, boundary.capacity);
+                    startDisplayProduct(boundary.name, boundary.weight, boundary.capacity, position);
                     break;
                 case 6:
-                    startDisplayProduct(dual.name, dual.weight, dual.capacity);
+                    startDisplayProduct(dual.name, dual.weight, dual.capacity, position);
                     break;
                 case 7:
-                    startDisplayProduct(flexstar.name, flexstar.weight, flexstar.capacity);
+                    startDisplayProduct(flexstar.name, flexstar.weight, flexstar.capacity, position);
                     break;
                 case 8:
-                    startDisplayProduct(halex.name, halex.weight, halex.capacity);
+                    startDisplayProduct(halex.name, halex.weight, halex.capacity, position);
                     break;
                 case 9:
-                    startDisplayProduct(lexar.name, lexar.weight, lexar.capacity);
+                    startDisplayProduct(lexar.name, lexar.weight, lexar.capacity, position);
                     break;
                 case 10:
-                    startDisplayProduct(lumax.name, lumax.weight, lumax.capacity);
+                    startDisplayProduct(lumax.name, lumax.weight, lumax.capacity, position);
                     break;
                 case 11:
-                    startDisplayProduct(prefix.name, prefix.weight, prefix.capacity);
+                    startDisplayProduct(prefix.name, prefix.weight, prefix.capacity, position);
                     break;
                 case 12:
-                    startDisplayProduct(princep.name, princep.weight, princep.capacity);
+                    startDisplayProduct(princep.name, princep.weight, princep.capacity, position);
                     break;
                 case 13:
-                    startDisplayProduct(sequence.name, sequence.weight, sequence.capacity);
+                    startDisplayProduct(sequence.name, sequence.weight, sequence.capacity, position);
                     break;
                 case 14:
-                    startDisplayProduct(touchdownHT.name, touchdownHT.weight, touchdownHT.capacity);
+                    startDisplayProduct(touchdownHT.name, touchdownHT.weight, touchdownHT.capacity, position);
                     break;
                 case 15:
-                    startDisplayProduct(touchdown.name, touchdown.weight, touchdown.capacity);
+                    startDisplayProduct(touchdown.name, touchdown.weight, touchdown.capacity, position);
                     break;
 
             }
         }
 
-        public void startDisplayProduct(String name, double weight, int capacity){
+        public void startDisplayProduct(String name, double weight, int capacity, int productKey){
 
             Intent intent = new Intent(ProductInfoFragment.this.getActivity(), DisplayProduct.class);
 
@@ -304,6 +352,7 @@ public class MainTabbedActivity extends Activity {
             products.putString("PRODUCT_NAME", name);
             products.putDouble("PRODUCT_WEIGHT", weight);
             products.putInt("PRODUCT_CAPACITY", capacity);
+			products.putInt("PRODUCT_KEY", productKey);
             intent.putExtras(products);
 
             startActivity(intent);
