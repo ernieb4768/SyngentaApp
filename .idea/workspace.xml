@@ -7,16 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e796f48-43b7-4fa1-a9a4-c57460fdd08b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/cardslib_cards_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/cardslib_core_2_0_1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/_name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/rhoffman.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobile/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-a8bc53cb6f5cdba3c310f3ae7e98a7766172f2e1.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/DisplayBulkSite.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/DisplayBulkSite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/DisplayProduct.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/DisplayProduct.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity$BulkSiteFragment$1.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity$BulkSiteFragment$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity$BulkSiteFragment.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity$BulkSiteFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity$ProductInfoFragment$1.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity$ProductInfoFragment$1.class" />
@@ -27,62 +17,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity$TopLoadMatrixFragment$3.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity$TopLoadMatrixFragment$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity$TopLoadMatrixFragment.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity$TopLoadMatrixFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/MainTabbedActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$array.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$array.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$attr.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$dimen.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$drawable.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$id.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$layout.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$menu.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$string.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$style.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/TopLoadFalse.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/TopLoadFalse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/TopLoadTrue.class" afterPath="$PROJECT_DIR$/mobile/build/intermediates/classes/debug/com/syngenta/rhoffman/syngenta/TopLoadTrue.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/pre-dexed/debug/classes-302cd0c9c59a3b157ca1091a09df6c9d5fe5daea.jar" afterPath="$PROJECT_DIR$/mobile/build/intermediates/pre-dexed/debug/classes-302cd0c9c59a3b157ca1091a09df6c9d5fe5daea.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/pre-dexed/debug/classes-73af8e4df3d733521b2bf767468ed9071cfd9ee6.jar" afterPath="$PROJECT_DIR$/mobile/build/intermediates/pre-dexed/debug/classes-73af8e4df3d733521b2bf767468ed9071cfd9ee6.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/mobile/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-095b537891cdcb6e831a220c4e72a2f164934932.jar" afterPath="$PROJECT_DIR$/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-095b537891cdcb6e831a220c4e72a2f164934932.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-ff2f7193a64ed2746bae5f41c0a1b08660114bf5.jar" afterPath="$PROJECT_DIR$/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-ff2f7193a64ed2746bae5f41c0a1b08660114bf5.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/outputs/apk/mobile-debug-unaligned.apk" afterPath="$PROJECT_DIR$/mobile/build/outputs/apk/mobile-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/outputs/apk/mobile-debug.apk" afterPath="$PROJECT_DIR$/mobile/build/outputs/apk/mobile-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/res/resources-debug-test.ap_" afterPath="$PROJECT_DIR$/mobile/build/intermediates/res/resources-debug-test.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/mobile/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/DisplayProduct.java" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/DisplayProduct.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/MainTabbedActivity.java" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/MainTabbedActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/generated/source/r/debug/android/support/v7/cardview/R.java" afterPath="$PROJECT_DIR$/mobile/build/generated/source/r/debug/android/support/v7/cardview/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/generated/source/r/debug/com/syngenta/rhoffman/syngenta/R.java" afterPath="$PROJECT_DIR$/mobile/build/generated/source/r/debug/com/syngenta/rhoffman/syngenta/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/mobile/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Syngenta.iml" afterPath="$PROJECT_DIR$/Syngenta.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/_gitignore" afterPath="$PROJECT_DIR$/mobile/_gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/res/debug/layout/activity_display_product.xml" afterPath="$PROJECT_DIR$/mobile/build/intermediates/res/debug/layout/activity_display_product.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_product.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_product.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build.gradle" afterPath="$PROJECT_DIR$/mobile/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/cardview_v7_21_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/cardview_v7_21_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/res/debug/layout/fragment_product_info.xml" afterPath="$PROJECT_DIR$/mobile/build/intermediates/res/debug/layout/fragment_product_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/layout/fragment_product_info.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/fragment_product_info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/outputs/apk/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/mobile/build/outputs/apk/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/mobile/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/mobile/build/intermediates/incremental/mergeResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/mobile.iml" afterPath="$PROJECT_DIR$/mobile/mobile.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_21_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_21_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_21_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_21_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v13_21_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v13_21_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/mobile/build/intermediates/res/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Syngenta.iws" />
@@ -107,15 +54,30 @@
       <file leaf-file-name="MainTabbedActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/MainTabbedActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6896552">
-              <caret line="261" column="35" selection-start-line="261" selection-start-column="35" selection-end-line="261" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.4357367">
+              <caret line="264" column="39" selection-start-line="264" selection-start-column="39" selection-end-line="264" selection-end-column="39" />
               <folding>
                 <element signature="e#7352#7386#0" expanded="true" />
                 <element signature="e#7454#7488#0" expanded="true" />
                 <element signature="e#7556#7590#0" expanded="true" />
                 <element signature="docComment;method#newInstance#0;class#ProductInfoFragment#0;class#MainTabbedActivity#0" expanded="true" />
-                <element signature="e#11185#11329#0" expanded="true" />
-                <element signature="e#11328#11329#0" expanded="true" />
+                <element signature="e#11240#11384#0" expanded="true" />
+                <element signature="e#11383#11384#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_product_info.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/fragment_product_info.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.071429">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <folding>
+                <element signature="e#468#501#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,19 +88,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_display_product.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_product.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.285714">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -842,9 +791,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mobile/build.gradle" />
-        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/fragment_product_info.xml" />
         <option value="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/DisplayProduct.java" />
         <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_display_product.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/fragment_product_info.xml" />
         <option value="$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/MainTabbedActivity.java" />
       </list>
     </option>
@@ -1337,22 +1286,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/fragment_product_info.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20655738">
-          <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
-          <folding>
-            <element signature="e#279#314#0" expanded="true" />
-            <element signature="e#352#387#0" expanded="true" />
-            <element signature="e#423#456#0" expanded="true" />
-            <element signature="e#495#528#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1374,23 +1307,36 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.285714">
+        <state vertical-scroll-proportion="0.47213113">
           <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/fragment_product_info.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.071429">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="e#468#501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/syngenta/rhoffman/syngenta/MainTabbedActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6896552">
-          <caret line="261" column="35" selection-start-line="261" selection-start-column="35" selection-end-line="261" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.4357367">
+          <caret line="264" column="39" selection-start-line="264" selection-start-column="39" selection-end-line="264" selection-end-column="39" />
           <folding>
             <element signature="e#7352#7386#0" expanded="true" />
             <element signature="e#7454#7488#0" expanded="true" />
             <element signature="e#7556#7590#0" expanded="true" />
             <element signature="docComment;method#newInstance#0;class#ProductInfoFragment#0;class#MainTabbedActivity#0" expanded="true" />
-            <element signature="e#11185#11329#0" expanded="true" />
-            <element signature="e#11328#11329#0" expanded="true" />
+            <element signature="e#11240#11384#0" expanded="true" />
+            <element signature="e#11383#11384#0" expanded="true" />
           </folding>
         </state>
       </provider>

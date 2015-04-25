@@ -192,22 +192,10 @@ public class MainTabbedActivity extends Activity {
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
 
-        // Initialize the List View
-        private RecyclerView recyclerView;
 		// Initialize the array of products
-		private String[] products = {aatrex.name, atrazine.name, bicep.name, bicepFC.name, bicepLite.name,
-				boundary.name, dual.name, flexstar.name, halex.name, lexar.name, lumax.name, prefix.name,
-				princep.name, sequence.name, touchdownHT.name, touchdown.name};
-
-		private Object[] productObjects = {aatrex, atrazine, bicep, bicepFC, bicepLite, boundary,
+		private Product[] products = {aatrex, atrazine, bicep, bicepFC, bicepLite, boundary,
 				dual, flexstar, halex, lexar, lumax, prefix, princep, sequence, touchdownHT,
 				touchdown};
-
-        private int[] drawables = {R.mipmap.ic_aatrex, R.mipmap.ic_atrazine, R.mipmap.ic_bicep,
-				R.mipmap.ic_bicep, R.mipmap.ic_bicep,
-				R.mipmap.ic_boundary, R.mipmap.ic_dual, R.mipmap.ic_flexstar, R.mipmap.ic_halex,
-				R.mipmap.ic_lexar, R.mipmap.ic_lumax, R.mipmap.ic_prefix, R.mipmap.ic_princep,
-				R.mipmap.ic_sequence, R.mipmap.ic_touchdown_hitech, R.mipmap.ic_touchdown_total};
 
 		/**
          * Returns a new instance of this fragment for the given section number.
@@ -245,7 +233,7 @@ public class MainTabbedActivity extends Activity {
 			ArrayList<Card> cards = new ArrayList<>();
 			for(i = 0; i < products.length; i++){
 
-				Card card = initializeCard(rootView, products[i], i);
+				Card card = initializeCard(rootView, i);
 
 				cards.add(card);
 			}
@@ -259,7 +247,12 @@ public class MainTabbedActivity extends Activity {
 
 		}
 
-		private Card initializeCard(View rootView, String title, final int loopCounter){
+		private Card initializeCard(View rootView, final int loopCounter){
+
+			Product product = products[loopCounter];
+			String title = product.name;
+			double weight = product.weight;
+			int capacity = product.capacity;
 
 			//Create a card
 			Card card = new Card(rootView.getContext());
@@ -267,15 +260,9 @@ public class MainTabbedActivity extends Activity {
 			//Create the card header
 			CardHeader header = new CardHeader(rootView.getContext());
 
-			//Create the card thumbnail
-			CardThumbnail thumbnail = new CardThumbnail(rootView.getContext());
-
-			header.setTitle(title);
-
-			thumbnail.setDrawableResource(drawables[loopCounter]);
+			header.setTitle(title + "\n" + weight + " pounds per gallon\n" + capacity + " gallons per load");
 
 			card.addCardHeader(header);
-			card.addCardThumbnail(thumbnail);
 
 			card.setOnClickListener(new Card.OnCardClickListener() {
 
@@ -291,73 +278,24 @@ public class MainTabbedActivity extends Activity {
 
         public void displayProductInfo(int position){
 
-            switch(position){
-                case 0:
-                    startDisplayProduct(aatrex.name, aatrex.weight, aatrex.capacity, position);
-                    break;
-                case 1:
-                    startDisplayProduct(atrazine.name, atrazine.weight, atrazine.capacity, position);
-                    break;
-                case 2:
-                    startDisplayProduct(bicep.name, bicep.weight, bicep.capacity, position);
-                    break;
-                case 3:
-                    startDisplayProduct(bicepFC.name, bicepFC.weight, bicepFC.capacity, position);
-                    break;
-                case 4:
-                    startDisplayProduct(bicepLite.name, bicepLite.weight, bicepLite.capacity, position);
-                    break;
-                case 5:
-                    startDisplayProduct(boundary.name, boundary.weight, boundary.capacity, position);
-                    break;
-                case 6:
-                    startDisplayProduct(dual.name, dual.weight, dual.capacity, position);
-                    break;
-                case 7:
-                    startDisplayProduct(flexstar.name, flexstar.weight, flexstar.capacity, position);
-                    break;
-                case 8:
-                    startDisplayProduct(halex.name, halex.weight, halex.capacity, position);
-                    break;
-                case 9:
-                    startDisplayProduct(lexar.name, lexar.weight, lexar.capacity, position);
-                    break;
-                case 10:
-                    startDisplayProduct(lumax.name, lumax.weight, lumax.capacity, position);
-                    break;
-                case 11:
-                    startDisplayProduct(prefix.name, prefix.weight, prefix.capacity, position);
-                    break;
-                case 12:
-                    startDisplayProduct(princep.name, princep.weight, princep.capacity, position);
-                    break;
-                case 13:
-                    startDisplayProduct(sequence.name, sequence.weight, sequence.capacity, position);
-                    break;
-                case 14:
-                    startDisplayProduct(touchdownHT.name, touchdownHT.weight, touchdownHT.capacity, position);
-                    break;
-                case 15:
-                    startDisplayProduct(touchdown.name, touchdown.weight, touchdown.capacity, position);
-                    break;
+			Product product = products[position];
+			String title = product.name;
+			double weight = product.weight;
+			int capacity = product.capacity;
 
-            }
-        }
+			Intent intent = new Intent(ProductInfoFragment.this.getActivity(), DisplayProduct.class);
 
-        public void startDisplayProduct(String name, double weight, int capacity, int productKey){
+			Bundle products = new Bundle();
+			products.putString("PRODUCT_NAME", title);
+			products.putDouble("PRODUCT_WEIGHT", weight);
+			products.putInt("PRODUCT_CAPACITY", capacity);
+			products.putInt("PRODUCT_KEY", position);
+			intent.putExtras(products);
 
-            Intent intent = new Intent(ProductInfoFragment.this.getActivity(), DisplayProduct.class);
-
-            Bundle products = new Bundle();
-            products.putString("PRODUCT_NAME", name);
-            products.putDouble("PRODUCT_WEIGHT", weight);
-            products.putInt("PRODUCT_CAPACITY", capacity);
-			products.putInt("PRODUCT_KEY", productKey);
-            intent.putExtras(products);
-
-            startActivity(intent);
+			startActivity(intent);
 
         }
+
     }
 
     /**
