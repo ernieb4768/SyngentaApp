@@ -340,20 +340,20 @@ public final class R {
 	}
 	public static final class string {
 		public static final int card_empty_cardwithlist_text = 0x7f0a0003;
-		public static final int card_font_fontFamily_expand = 0x7f0a0015;
-		public static final int card_font_fontFamily_header = 0x7f0a0016;
-		public static final int card_font_fontFamily_image_text_over = 0x7f0a0017;
-		public static final int card_font_fontFamily_main_content = 0x7f0a0018;
-		public static final int card_native_font_fontFamily_action = 0x7f0a0019;
-		public static final int card_native_font_fontFamily_expand = 0x7f0a001a;
-		public static final int card_native_font_fontFamily_header = 0x7f0a001b;
-		public static final int card_native_font_fontFamily_main_content = 0x7f0a001c;
+		public static final int card_font_fontFamily_expand = 0x7f0a0021;
+		public static final int card_font_fontFamily_header = 0x7f0a0022;
+		public static final int card_font_fontFamily_image_text_over = 0x7f0a0023;
+		public static final int card_font_fontFamily_main_content = 0x7f0a0024;
+		public static final int card_native_font_fontFamily_action = 0x7f0a0025;
+		public static final int card_native_font_fontFamily_expand = 0x7f0a0026;
+		public static final int card_native_font_fontFamily_header = 0x7f0a0027;
+		public static final int card_native_font_fontFamily_main_content = 0x7f0a0028;
 		public static final int card_native_font_fontFamily_top_colored = 0x7f0a0004;
 		public static final int card_native_progressbar_text = 0x7f0a0005;
 		public static final int card_progressbar_cardwithlist_text = 0x7f0a0006;
-		public static final int font_fontFamily_medium = 0x7f0a0009;
-		public static final int font_fontFamily_regular = 0x7f0a000a;
-		public static final int list_card_undo_title = 0x7f0a000b;
+		public static final int font_fontFamily_medium = 0x7f0a0015;
+		public static final int font_fontFamily_regular = 0x7f0a0016;
+		public static final int list_card_undo_title = 0x7f0a0017;
 	}
 	public static final class style {
 		public static final int CardView = 0x7f0b0001;

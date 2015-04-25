@@ -44,24 +44,36 @@ public class MainTabbedActivity extends Activity {
 
 	final static String describeAatrex = App.getContext().getString(R.string.describeAatrex);
 	final static String describeAtrazine = App.getContext().getString(R.string.describeAtrazine);
+	final static String describeBicep = App.getContext().getString(R.string.describeBicep);
+	final static String describeBoundary = App.getContext().getString(R.string.describeBoundary);
+	final static String describeDual = App.getContext().getString(R.string.describeDual);
+	final static String describeFlexstar = App.getContext().getString(R.string.describeFlexstar);
+	final static String describeHalex = App.getContext().getString(R.string.describeHalex);
+	final static String describeLexar = App.getContext().getString(R.string.describeLexar);
+	final static String describeLumax = App.getContext().getString(R.string.describeLumax);
+	final static String describePrefix = App.getContext().getString(R.string.describePrefix);
+	final static String describePrincep = App.getContext().getString(R.string.describePrincep);
+	final static String describeSequence = App.getContext().getString(R.string.describeSequence);
+	final static String describeTouchdownHitech = App.getContext().getString(R.string.describeTouchdownHitech);
+	final static String describeTouchdownTotal = App.getContext().getString(R.string.describeTouchdownTotal);
 
     // Create the Products
     final static Product aatrex = new Product("Aatrex 4L", 9.15, 5000, describeAatrex);
     final static Product atrazine = new Product("Atrazine 4L", 9.15, 5000, describeAtrazine);
-    final static Product bicep = new Product("Bicep II Magnum", 9.31, 5000);
-    final static Product bicepFC = new Product("Bicep II Magnum FC", 9.31, 5000);
-    final static Product bicepLite = new Product("Bicep LITE II Magnum", 9.31, 5000);
-    final static Product boundary = new Product("Boundary", 9.01, 5000);
-    final static Product dual = new Product("Dual II Magnum", 9.28, 5000);
-    final static Product flexstar = new Product("Flexstar GT 3.5", 10.08, 4300);
-    final static Product halex = new Product("Halex GT", 10.08, 4420);
-    final static Product lexar = new Product("Lexar EZ", 9.15, 5000);
-    final static Product lumax = new Product("Lumax EZ", 9.12, 5000);
-    final static Product prefix = new Product("Prefix", 9.32, 5000);
-    final static Product princep = new Product("Princep 4L", 9.47, 4800);
-    final static Product sequence = new Product("Sequence", 10.2, 4400);
-    final static Product touchdownHT = new Product("Touchdown HiTech", 11.73, 3800);
-    final static Product touchdown = new Product("Touchdown Total", 11.13, 4000);
+    final static Product bicep = new Product("Bicep II Magnum", 9.31, 5000, describeBicep);
+    final static Product bicepFC = new Product("Bicep II Magnum FC", 9.31, 5000, describeBicep);
+    final static Product bicepLite = new Product("Bicep LITE II Magnum", 9.31, 5000, describeBicep);
+    final static Product boundary = new Product("Boundary", 9.01, 5000, describeBoundary);
+    final static Product dual = new Product("Dual II Magnum", 9.28, 5000, describeDual);
+    final static Product flexstar = new Product("Flexstar GT 3.5", 10.08, 4300, describeFlexstar);
+    final static Product halex = new Product("Halex GT", 10.08, 4420, describeHalex);
+    final static Product lexar = new Product("Lexar EZ", 9.15, 5000, describeLexar);
+    final static Product lumax = new Product("Lumax EZ", 9.12, 5000, describeLumax);
+    final static Product prefix = new Product("Prefix", 9.32, 5000, describePrefix);
+    final static Product princep = new Product("Princep 4L", 9.47, 4800, describePrincep);
+    final static Product sequence = new Product("Sequence", 10.2, 4400, describeSequence);
+    final static Product touchdownHT = new Product("Touchdown HiTech", 11.73, 3800, describeTouchdownHitech);
+    final static Product touchdown = new Product("Touchdown Total", 11.13, 4000, describeTouchdownTotal);
 
     // Initialize the arrays of products for each bulk site.
     final static String[] mtsProducts = {"Aatrex 4L", "Atrazine 4L", "Bicep II Magnum", "Brawl II ATZ",
