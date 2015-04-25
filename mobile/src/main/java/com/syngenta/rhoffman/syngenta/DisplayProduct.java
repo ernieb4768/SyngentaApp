@@ -13,6 +13,7 @@ public class DisplayProduct extends Activity {
 
     TextView productNameTextView;
 	TextView productTextView;
+	TextView productDescriptionTextView;
 	ImageView productImageView;
 
 	int[] drawables = {R.mipmap.ic_aatrex, R.mipmap.ic_atrazine, R.mipmap.ic_bicep,
@@ -30,20 +31,24 @@ public class DisplayProduct extends Activity {
         String name = display.getExtras().getString("PRODUCT_NAME");
         double weight = display.getExtras().getDouble("PRODUCT_WEIGHT");
         int capacity = display.getExtras().getInt("PRODUCT_CAPACITY");
+		String description = display.getExtras().getString("PRODUCT_DESCRIPTION");
 		int imageID = display.getExtras().getInt("PRODUCT_KEY");
 
 		productImageView = (ImageView) findViewById(R.id.productImageView);
-		productTextView = (TextView) findViewById(R.id.productTextView);
-		productNameTextView = (TextView) findViewById(R.id.productNameTextView);
-
 		productImageView.setImageResource(drawables[imageID]);
 
+		productTextView = (TextView) findViewById(R.id.productTextView);
+		productTextView.setTextSize(30);
+		productTextView.setText("Weight: " + weight + " lbs/gal\nCapacity: " + capacity + " gallons");
+
+		productNameTextView = (TextView) findViewById(R.id.productNameTextView);
 		productNameTextView.setTextSize(30);
 		productNameTextView.setTextColor(Color.WHITE);
 		productNameTextView.setText(name);
 
-		productTextView.setTextSize(30);
-        productTextView.setText("Weight: " + weight + " lbs/gal\nCapacity: " + capacity + " gallons");
+		productDescriptionTextView = (TextView) findViewById(R.id.productDescriptionTextView);
+		productDescriptionTextView.setTextSize(20);
+		productDescriptionTextView.setText(description);
 
     }
 

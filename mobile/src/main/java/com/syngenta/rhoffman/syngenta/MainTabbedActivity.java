@@ -10,7 +10,6 @@ import android.content.Intent;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,7 +24,6 @@ import android.widget.Spinner;
 import it.gmariotti.cardslib.library.internal.Card;
 import it.gmariotti.cardslib.library.internal.CardArrayAdapter;
 import it.gmariotti.cardslib.library.internal.CardHeader;
-import it.gmariotti.cardslib.library.internal.CardThumbnail;
 import it.gmariotti.cardslib.library.view.CardListView;
 
 
@@ -44,9 +42,12 @@ public class MainTabbedActivity extends Activity {
      */
     ViewPager mViewPager;
 
+	final static String describeAatrex = App.getContext().getString(R.string.describeAatrex);
+	final static String describeAtrazine = App.getContext().getString(R.string.describeAtrazine);
+
     // Create the Products
-    final static Product aatrex = new Product("Aatrex 4L", 9.15, 5000);
-    final static Product atrazine = new Product("Atrazine 4L", 9.15, 5000);
+    final static Product aatrex = new Product("Aatrex 4L", 9.15, 5000, describeAatrex);
+    final static Product atrazine = new Product("Atrazine 4L", 9.15, 5000, describeAtrazine);
     final static Product bicep = new Product("Bicep II Magnum", 9.31, 5000);
     final static Product bicepFC = new Product("Bicep II Magnum FC", 9.31, 5000);
     final static Product bicepLite = new Product("Bicep LITE II Magnum", 9.31, 5000);
@@ -268,6 +269,7 @@ public class MainTabbedActivity extends Activity {
 
 				@Override
 				public void onClick(Card card, View view) {
+
 					displayProductInfo(loopCounter);
 				}
 			});
@@ -282,6 +284,7 @@ public class MainTabbedActivity extends Activity {
 			String title = product.name;
 			double weight = product.weight;
 			int capacity = product.capacity;
+			String description = product.description;
 
 			Intent intent = new Intent(ProductInfoFragment.this.getActivity(), DisplayProduct.class);
 
@@ -289,6 +292,7 @@ public class MainTabbedActivity extends Activity {
 			products.putString("PRODUCT_NAME", title);
 			products.putDouble("PRODUCT_WEIGHT", weight);
 			products.putInt("PRODUCT_CAPACITY", capacity);
+			products.putString("PRODUCT_DESCRIPTION", description);
 			products.putInt("PRODUCT_KEY", position);
 			intent.putExtras(products);
 

@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="0dp"
     android:paddingRight="0dp"
@@ -7,24 +7,43 @@
 	android:orientation="vertical"
     tools:context="com.syngenta.rhoffman.syngenta.DisplayProduct">
 
-    <ImageView
+	<LinearLayout
 		android:layout_width="match_parent"
-		android:layout_height="200dp"
-		android:id="@+id/productImageView"/>
-	
-	<TextView
-		android:layout_width="match_parent"
-		android:layout_height="50dp"
-		android:background="#222222"
-		android:gravity="center_horizontal"
-		android:id="@+id/productNameTextView"/>
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
 
-	<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-		android:paddingLeft="16dp"
-		android:paddingRight="16dp"
-        android:id="@+id/productTextView"/>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:id="@+id/productImageView"/>
 
-</LinearLayout>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:background="#222222"
+			android:gravity="center_horizontal"
+			android:paddingBottom="16dp"
+			android:id="@+id/productNameTextView"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:paddingTop="16dp"
+			android:paddingBottom="16dp"
+			android:id="@+id/productTextView"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="16dp"
+			android:paddingLeft="16dp"
+			android:paddingTop="16dp"
+			android:paddingBottom="16dp"
+			android:id="@+id/productDescriptionTextView"/>
+
+	</LinearLayout>
+
+</ScrollView>
 <!-- From: file:/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/src/main/res/layout/activity_display_product.xml -->

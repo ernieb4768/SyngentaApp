@@ -246,13 +246,14 @@
     <!-- From: file:/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.0.1/res/values/values.xml -->
     <eat-comment/>
     <string name="card_progressbar_cardwithlist_text">Loading data...</string>
-    <string name="font_fontFamily_medium">sans-serif</string>
-    <string name="font_fontFamily_regular">sans-serif</string>
     <!-- From: file:/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="hello_world">Hello world!</string>
+    <string name="describeAatrex">AAtrex® 4L is the liquid formulation of this broad spectrum herbicide that provides season-long control of many broadleaf weeds and some grasses in corn, sorghum, sugarcane and other crops specified on the label. AAtrex 4L has outstanding application flexibility – it can be applied preplant surface, preplant incorporated, pre-emergence, or post-emergence. It is also serves as an excellent tank mix partner to enhance the control of certain broadleaf weeds and grasses.</string>
+    <string name="describeAtrazine">Atrazine 4L is the liquid formulation of this broad spectrum herbicide that provides season-long control of many broadleaf weeds and some grasses in corn, sorghum, sugarcane and other crops specified on the label. Atrazine 4L has outstanding application flexibility – it can be applied preplant surface, preplant incorporated, pre-emergence, or post-emergence. It is also serves as an excellent tank mix partner to enhance the control of certain broadleaf weeds and grasses.</string>
     <!-- From: file:/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.0.1/res/values/values.xml -->
     <eat-comment/>
+    <string name="font_fontFamily_medium">sans-serif</string>
+    <string name="font_fontFamily_regular">sans-serif</string>
     <string name="list_card_undo_title">Undo</string>
     <!-- From: file:/home/rhoffman/AndroidStudioProjects/Syngenta/mobile/src/main/res/values/strings.xml -->
     <eat-comment/>
