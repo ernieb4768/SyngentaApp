@@ -518,13 +518,19 @@ public class MainTabbedActivity extends Activity {
             View rootView = inflater.inflate(R.layout.fragment_bulk_site, container, false);
 
             // Initialize the array of Bulk Sites
-            String[] bulkSites = {desMoines.location, farmerCity.location, gre.location,
-                memphis.location, morton.location, mts.location, stl.location, websterCity.location,
-                worton.location};
+            BulkSite[] bulkSites = {desMoines, farmerCity, gre, memphis, morton, mts, stl, websterCity,
+                worton};
+
+			String[] bulkSiteNames = new String[9];
+
+			for(int i = 0; i < bulkSites.length; i++){
+				BulkSite bulkSite = bulkSites[i];
+				bulkSiteNames[i] = bulkSite.location;
+			}
 
             // Set up the ArrayAdapter
             ArrayAdapter<String> bulkSiteArrayAdapter =
-                    new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_list_item_1, bulkSites);
+                    new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_list_item_1, bulkSiteNames);
 
             listView = (ListView) rootView.findViewById(R.id.bulkSiteListView);
             listView.setAdapter(bulkSiteArrayAdapter);

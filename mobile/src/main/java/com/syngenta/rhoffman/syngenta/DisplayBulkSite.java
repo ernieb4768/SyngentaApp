@@ -23,9 +23,8 @@ public class DisplayBulkSite extends Activity {
 
         // Get the info that was passed along with the intent
         Intent site = getIntent();
-        Bundle bundle = site.getExtras();
-        String location = bundle.getString("BULK_SITE");
-        String [] allProducts = bundle.getStringArray("PRODUCT_LIST");
+        String location = site.getExtras().getString("BULK_SITE");
+        String [] allProducts = site.getExtras().getStringArray("PRODUCT_LIST");
 
         // Set the TextView and add the text
         bulkSiteTextView = (TextView) findViewById(R.id.locationTextView);
@@ -37,7 +36,7 @@ public class DisplayBulkSite extends Activity {
                 new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, allProducts);
 
         // Set the ListView and set the array adapter
-        bulkSiteListView = (ListView) findViewById(R.id.bulkSiteListView);
+        bulkSiteListView = (ListView) findViewById(R.id.allProductsListView);
         bulkSiteListView.setAdapter(bulkSiteProductsArrayAdapter);
 
     }
